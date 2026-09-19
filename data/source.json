@@ -1,0 +1,11 @@
+{
+  "repository": "https://github.com/ksamint/tableai_designaha",
+  "commit": "17e8486df5cc2896049164fdef9c876e5790897b",
+  "folder": "TABLEAI",
+  "brandApi": "https://apuch.art/api/brands/tableai.json",
+  "retrievedAt": "2026-09-19T12:56:06.071599+00:00",
+  "files": {
+    "TABLEAI/TableAI_DESIGN.md": "7a042fee753b0dc3c09a7c9fc99425ea17ecf4deb16206ec6bf117d84bf2e8a8",
+    "TABLEAI/tokens/tableai.tokens.json": "17c532e0b56d1e9a401bac677652f7a0518d011a5f2aa63dba454727b06e3037"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "mode": "light",
+  "primary": "#0A1626",
+  "accent": "#A88B52",
+  "secondary": "#545F72",
+  "surface": "#FBF9FA",
+  "paper": "#FFFFFF",
+  "ink": "#1B1B1D",
+  "muted": "#44474C",
+  "line": "rgba(10, 22, 38, 0.16)",
+  "keywords": [
+    "white",
+    "deep blue",
+    "dark gold",
+    "think tank",
+    "minimal"
+  ]
+}
