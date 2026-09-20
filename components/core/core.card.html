@@ -1,0 +1,35 @@
+<!-- @dsCard group="Components" viewport="700x300" name="Core — Buttons & Fields" subtitle="Button, IconButton, Input, Textarea, Select, Checkbox, Radio, Switch" -->
+<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="../../styles.css">
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+<script src="../../_ds_bundle.js"></script>
+<style>body{margin:0;padding:20px;background:var(--bg)}.row{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-bottom:16px}.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;align-items:start}</style></head>
+<body><div id="root"></div>
+<script type="text/babel">
+const { Button, IconButton, Input, Textarea, Select, Checkbox, Radio, RadioGroup, Switch } = window.TABLEAIDesignSystem_6a9d5e;
+function Demo(){
+  const [c,setC]=React.useState(true);const [r,setR]=React.useState("zh");const [s,setS]=React.useState(true);const [sel,setSel]=React.useState("");
+  return <div>
+    <div className="row">
+      <Button>Explore</Button><Button variant="cta" iconRight="arrow-right">Join the Alliance</Button><Button variant="outline">Learn More</Button>
+      <Button variant="ghost" icon="copy">Copy</Button><Button variant="link">View all</Button><Button variant="danger" size="sm">Delete</Button>
+      <Button size="sm">Small</Button><Button size="lg" iconRight="arrow-right">Large CTA</Button><Button loading>Saving</Button><Button disabled>Disabled</Button>
+      <IconButton icon="menu" label="Menu" /><IconButton icon="send" label="Send" variant="primary" /><IconButton icon="pencil" label="Edit" variant="outline" size="sm" /><IconButton icon="x" label="Close" active />
+    </div>
+    <div className="grid">
+      <Input label="Email" placeholder="you@company.com" icon="mail" />
+      <Input label="Amount" prefix="HK$" error="Enter a positive amount" defaultValue="-4" />
+      <Select label="Region" placeholder="Choose a hub" options={["Greater China","Europe","Americas"]} value={sel} onChange={e=>setSel(e.target.value)} />
+      <Textarea label="Message" rows={2} placeholder="Describe the scenario" />
+      <div style={{display:"flex",flexDirection:"column",gap:12,paddingTop:26}}>
+        <Checkbox checked={c} onChange={setC} label="Publish" description="Visible on the public site" />
+        <Checkbox indeterminate label="Select all" />
+        <Switch checked={s} onChange={setS} label="Active" />
+      </div>
+      <div style={{paddingTop:26}}><RadioGroup name="lang" value={r} onChange={setR} options={[{value:"zh",label:"中文",description:"Default language"},{value:"en",label:"English"}]} /></div>
+    </div>
+  </div>;
+}
+ReactDOM.createRoot(document.getElementById("root")).render(<Demo/>);
+</script></body></html>
