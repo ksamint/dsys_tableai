@@ -1,0 +1,39 @@
+<!-- @dsCard group="Components" viewport="700x300" name="Feedback — Dialog, Toast, Tooltip" subtitle="Modal on deep-blue scrim; hairline toasts; deep-blue tooltip" -->
+<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="../../styles.css">
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+<script src="../../_ds_bundle.js"></script>
+<style>body{margin:0;padding:20px;background:var(--bg)}</style></head>
+<body><div id="root"></div>
+<script type="text/babel">
+const { Dialog, ConfirmDialog, Toast, Tooltip, Button, IconButton, Input } = window.TABLEAIDesignSystem_6a9d5e;
+function Demo(){
+  const [open,setOpen]=React.useState(false);const [del,setDel]=React.useState(false);
+  return <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:20,alignItems:"start"}}>
+    <div style={{display:"flex",flexDirection:"column",gap:8}}>
+      <Toast variant="success" title="Content published" description="Homepage · ZH/EN" onDismiss={()=>{}} style={{width:"100%"}} />
+      <Toast variant="error" title="Settlement failed" description="Node Basel did not acknowledge." action={<Button variant="link" size="sm">Retry</Button>} style={{width:"100%"}} />
+      <Toast variant="loading" title="Seeding content…" style={{width:"100%"}} />
+    </div>
+    <div style={{display:"flex",flexDirection:"column",gap:16}}>
+      <div style={{display:"flex",gap:8,alignItems:"center"}}>
+        <Button variant="outline" onClick={()=>setOpen(true)}>Open dialog</Button>
+        <Button variant="danger" onClick={()=>setDel(true)}>Delete…</Button>
+        <Tooltip content="Toggle language"><IconButton icon="languages" label="Language" variant="outline" /></Tooltip>
+        <Tooltip content="Basel node · Europe" side="bottom"><IconButton icon="map-pin" label="Location" variant="outline" /></Tooltip>
+      </div>
+      <div style={{border:"1px solid var(--border)",padding:24,position:"relative",minHeight:120}}>
+        <p style={{margin:"0 0 12px",fontSize:12,letterSpacing:"0.3em",textTransform:"uppercase",color:"var(--text-muted)"}}>Partners</p>
+        <h2 style={{margin:0,fontSize:20,fontWeight:500}}>Add partner</h2>
+        <p style={{margin:"8px 0 0",fontSize:13,color:"var(--text-muted)"}}>Static preview of the dialog panel — click “Open dialog” for the live modal.</p>
+      </div>
+    </div>
+    <Dialog open={open} onClose={()=>setOpen(false)} eyebrow="Partners" title="Add partner" description="Bilingual record shown on the homepage grid." actions={<><Button variant="ghost" onClick={()=>setOpen(false)}>Cancel</Button><Button onClick={()=>setOpen(false)}>Save</Button></>}>
+      <div style={{display:"flex",flexDirection:"column",gap:16}}><Input label="Name (EN)" placeholder="Boyuai Education" /><Input label="Website" placeholder="https://" icon="external-link" /></div>
+    </Dialog>
+    <ConfirmDialog open={del} danger title="Delete location?" description="This removes the node from the network map." confirmLabel="Delete" onConfirm={()=>setDel(false)} onClose={()=>setDel(false)} />
+  </div>;
+}
+ReactDOM.createRoot(document.getElementById("root")).render(<Demo/>);
+</script></body></html>
