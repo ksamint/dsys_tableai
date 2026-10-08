@@ -6,10 +6,10 @@ export function Switch({ checked = false, onChange, label, description, disabled
   const w = size === "sm" ? 28 : 36, h = size === "sm" ? 16 : 20, k = h - 4;
   return (
     <label style={{ display: "inline-flex", alignItems: "center", gap: 12, cursor: disabled ? "not-allowed" : "pointer", opacity: disabled ? 0.5 : 1, fontFamily: "var(--font-sans)", color: "var(--text)", ...style }}>
-      <span role="switch" aria-checked={checked} style={{ position: "relative", width: w, height: h, borderRadius: "var(--radius-full)", flexShrink: 0, boxSizing: "border-box",
-        background: checked ? "var(--bg-inverse)" : "var(--color-outline-variant)", outline: focus ? "1px solid var(--focus-ring)" : "none", outlineOffset: 2,
+      <span aria-hidden="false" style={{ position: "relative", width: w, height: h, borderRadius: "var(--radius-full)", flexShrink: 0, boxSizing: "border-box",
+        background: checked ? "var(--bg-inverse)" : "var(--color-outline-variant)", outline: focus ? "var(--focus-ring-width) solid var(--focus-ring)" : "none", outlineOffset: 2,
         transition: "background var(--dur-fast) var(--ease-standard)" }}>
-        <input type="checkbox" role="switch" checked={checked} disabled={disabled} onChange={e => onChange && onChange(e.target.checked, e)} onFocus={() => setFocus(true)} onBlur={() => setFocus(false)}
+        <input type="checkbox" role="switch" checked={checked} disabled={disabled} onChange={e => onChange && onChange(e.target.checked, e)} aria-checked={checked} onFocus={e => setFocus(e.currentTarget.matches(":focus-visible"))} onBlur={() => setFocus(false)}
           style={{ position: "absolute", inset: 0, opacity: 0, margin: 0, cursor: "inherit" }} {...rest} />
         <span style={{ position: "absolute", top: 2, left: 2, width: k, height: k, borderRadius: "50%", background: "var(--bg)", transform: checked ? `translateX(${w - h}px)` : "translateX(0)", transition: "transform var(--dur-fast) var(--ease-standard)" }} />
       </span>

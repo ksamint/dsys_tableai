@@ -1,4 +1,4 @@
-const { Eyebrow, Button, Card, TileGrid, Stat, Divider, Icon } = window.TABLEAIDesignSystem_6a9d5e;
+const { Eyebrow, Button, Card, TileGrid, Stat, Divider, Icon } = window.TableAIDesignSystem_f48f27;
 
 function Hero() {
   const { t } = useLang();
@@ -10,12 +10,12 @@ function Hero() {
       <div className="ring square" style={{ bottom: "20%", left: "5%", width: 200, height: 200, opacity: .15 }} aria-hidden="true" />
       <div className="dot" style={{ top: "40%", right: "25%" }} aria-hidden="true" />
       <Container style={{ position: "relative", zIndex: 1, paddingTop: 96 }}>
-        <Reveal><Eyebrow line style={{ marginBottom: 32 }}>{t(H.eyebrow)}</Eyebrow></Reveal>
+        <Reveal><Eyebrow line style={{ marginBottom: 32 }}>{t(SITE.studio.eyebrow)}</Eyebrow></Reveal>
         <Reveal delay={.1}><h1 className="h1-hero">{t(H.title)}</h1></Reveal>
-        <Reveal delay={.2}><p className="lead hero-lead">{t(H.tagline)}</p></Reveal>
+        <Reveal delay={.2}><p className="lead hero-lead">{t(SITE.studio.tagline)}</p></Reveal>
         <Reveal delay={.3}>
           <div style={{ display: "flex", flexWrap: "wrap", gap: 16 }}>
-            <Button as={A} href="/protocol" size="lg" iconRight="arrow-right">{t(H.cta1)}</Button>
+            <Button as={A} href="/studio" size="lg" iconRight="arrow-right">{t(SITE.studio.cta1)}</Button>
             <Button as={A} href="/about" variant="outline" size="lg">{t(H.cta2)}</Button>
           </div>
         </Reveal>
@@ -53,9 +53,12 @@ function HomePage() {
     <>
       <Hero />
       <StatsStrip stats={S.stats} />
+      <StudioProblem />
+      <StudioProducts />
+      <StudioTiansight />
 
       {/* Core insight — two thresholds */}
-      <Section size="narrow" pad="xl" borderTop={false}>
+      <Section size="narrow" pad="xl">
         <Reveal><Eyebrow style={{ marginBottom: 40 }}>{t(S.insight.eyebrow)}</Eyebrow></Reveal>
         <Reveal delay={.2}><blockquote className="quote">{t(S.hero.insight)}</blockquote></Reveal>
         <TileGrid columns={2} minWidth={280}>

@@ -1,6 +1,5 @@
 /**
  * Single-line text field in the brand hairline frame. Focus = gold border + gold-mist wash; error = red border.
- * @startingPoint section="Forms" subtitle="Text field with label, hint, error, icon" viewport="700x220"
  */
 export interface InputProps extends Omit<React.InputHTMLAttributes<HTMLInputElement>, "size" | "prefix" | "style"> {
   /** Tracked uppercase label above the field */

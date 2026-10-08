@@ -7,12 +7,12 @@
 <style>body{margin:0;background:var(--bg)}</style></head>
 <body><div id="root"></div>
 <script type="text/babel">
-const { NavBar, Tabs } = window.TABLEAIDesignSystem_6a9d5e;
+const { NavBar, Tabs } = window.TableAIDesignSystem_f48f27;
 const items=[{href:"/protocol",label:"Protocol"},{href:"/network",label:"Network"},{href:"/business",label:"AI Labs"},{href:"/about",label:"About"}];
 function Demo(){
   const [path,setPath]=React.useState("/network");const [lang,setLang]=React.useState("en");const [tab,setTab]=React.useState("content");
   return <div>
-    <NavBar logoSrc="../../assets/logo/tableai-a2a-logo-transparent.png" items={items} activeHref={path} onNavigate={setPath} lang={lang} onToggleLang={()=>setLang(l=>l==="zh"?"en":"zh")} glass height={64} style={{position:"relative"}} />
+    <NavBar logoSrc="../../assets/logo/tableai-a2a-mark.svg" items={items} activeHref={path} onNavigate={setPath} lang={lang} onToggleLang={()=>setLang(l=>l==="zh"?"en":"zh")} glass height={64} style={{position:"relative"}} />
     <div style={{padding:"20px 24px 0"}}>
       <Tabs items={[{label:"Content",value:"content",count:28},{label:"Locations",value:"loc",count:7},{label:"Partners",value:"partners",count:8},{label:"Users",value:"users"},{label:"Settings",value:"settings",disabled:true}]} value={tab} onChange={setTab} />
       <div style={{padding:"16px 0",fontSize:13,color:"var(--text-muted)"}}>Selected: <span style={{color:"var(--text)"}}>{tab}</span> · Route: <span style={{color:"var(--text)"}}>{path}</span> · Lang: <span style={{color:"var(--text)"}}>{lang}</span></div>

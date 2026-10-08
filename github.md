@@ -1,29 +1,29 @@
 repo: ksamint/dsys_tableai
 branch: main
-path: TABLEAI
 
 ## Last sync
-date: 2026-09-20T08:16:36Z
+date: 2026-10-06T03:12:58Z
 ### Updated in this project
-- Checked upstream: TABLEAI/tokens/tableai.tokens.json and TABLEAI/TableAI_DESIGN.md unchanged since previous sync — no token or guideline drift
-- No files rebuilt this sync
+- Admin Users / Settings / Login rebuilt from ksamint/table-ai-website client/src/pages/admin
+- New data & content components, status colours, heading roles, logo lockups, pitch-deck + one-pager templates
 
 ## Sync history
-### 2026-09-20T05:20:00Z
-- Tokens rebuilt from TABLEAI/tokens/tableai.tokens.json and TableAI_DESIGN.md front-matter (colors, type, spacing, radius)
-- Brand assets pulled from data/assets.json media URLs (A2A logo ×2, brand hero)
-- Component states (default / hover / active / loading) implemented per TableAI_DESIGN.md §4
-- Website + admin UI kits recreated from the sibling repo ksamint/table-ai-website (pages, Navbar, Footer, seed copy)
+### 2026-10-06T01:23:32Z
+- Imported the full design system from ksamint/dsys_tableai@main (tokens, fonts, assets, 30 components, 22 guideline cards, website + admin UI kits)
+- Component namespace references updated to this project's compiled bundle
+- README extended with the Oct 2026 seed-plan context (Expert-AI Studio, Tiansight)
+
+### 2026-09-20T08:16:36Z (upstream receipt)
+- Upstream TABLEAI/tokens and TableAI_DESIGN.md unchanged; no files rebuilt
 
 ## Screen map
 | Screen / file | Repo files |
 |---|---|
-| tokens/colors.css | TABLEAI/tokens/tableai.tokens.json, TABLEAI/TableAI_DESIGN.md (front-matter colors), data/theme.json |
-| tokens/typography.css, tokens/spacing.css, tokens/radius.css | TABLEAI/tokens/tableai.tokens.json, TABLEAI/TableAI_DESIGN.md |
-| assets/logo/*.png, assets/brand/tableai-brand-hero.png | data/assets.json (mediaUrl) |
-| guidelines/states.html, components/* | TABLEAI/TableAI_DESIGN.md §4 组件状态 |
-| ui_kits/website/* | ksamint/table-ai-website: client/src/pages/{Home,ProtocolPage,NetworkPage,BusinessPage,AboutPage}.tsx, components/{Navbar,Footer}.tsx, server/seed.ts, client/src/index.css |
-| ui_kits/admin/* | ksamint/table-ai-website: client/src/components/AdminLayout.tsx, client/src/pages/admin/AdminDashboard.tsx, server/seed.ts |
-| components/a2a/* | ksamint/table-ai-website: client/src/components/AIChatBox.tsx |
-| components/icons/* , assets/icons/lucide | lucide-icons/lucide icons/*.svg (set used by table-ai-website) |
-| assets/fonts/Manrope[wght].ttf | google/fonts ofl/manrope |
+| styles.css, tokens/*.css | styles.css, tokens/*.css (from TABLEAI/tokens/tableai.tokens.json, TABLEAI/TableAI_DESIGN.md) |
+| assets/** | assets/** |
+| guidelines/*.html | guidelines/*.html |
+| components/** | components/** |
+| ui_kits/website/* | ui_kits/website/* |
+| ui_kits/admin/* | ui_kits/admin/*; ksamint/table-ai-website client/src/pages/admin/{AdminUsers,AdminSettings,AdminLogin}.tsx |
+| thumbnail.html | thumbnail.html |
+| README.md, SKILL.md | README.md, SKILL.md |

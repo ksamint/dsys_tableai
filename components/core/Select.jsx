@@ -6,7 +6,8 @@ import { FieldLabel, fieldFrame } from "./Input.jsx";
 export function Select({ label, hint, error, required, options = [], placeholder, size = "md", disabled = false, style, containerStyle, id, value, onChange, ...rest }) {
   const [focus, setFocus] = React.useState(false);
   const h = size === "sm" ? 32 : 40;
-  const selId = id || (label ? "sel-" + label.replace(/\W+/g, "-").toLowerCase() : undefined);
+  const autoId = React.useId();
+  const selId = id || "sel-" + autoId;
   const opts = options.map(o => (typeof o === "string" ? { value: o, label: o } : o));
   return (
     <FieldLabel label={label} hint={hint} error={error} required={required} htmlFor={selId} containerStyle={containerStyle}>

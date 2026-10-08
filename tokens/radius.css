@@ -3,6 +3,7 @@
 --radius-none:0px;
 --radius-sm:2px;
 --radius:4px;
+/* Deprecated — kept only for DTCG parity with tableai.tokens.json. Do not use; they break the 2–4px rule. */
 --radius-md:6px;
 --radius-lg:8px;
 --radius-xl:12px;

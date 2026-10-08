@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet><script src="./ds-base.js"></script></helmet>
+<x-import component-from-global-scope="deck-stage" from="./deck-stage.js" width="1920" height="1080" hint-size="100%,100%">
+<section data-label="Cover" data-screen-label="01 Cover" style="background:#FFFFFF;color:#0A1626;font-family:Manrope,'Noto Sans TC',sans-serif;padding:100px 120px;box-sizing:border-box;display:flex;flex-direction:column;justify-content:space-between">
+<div style="display:flex;justify-content:space-between;align-items:center"><img src="../../assets/logo/tableai-lockup-horizontal.svg" alt="TABLE AI" style="height:52px"><span style="font-size:26px;color:#44474C">Confidential · 機密</span></div>
+<sc-if value="{{ en }}" hint-placeholder-val="{{ true }}"><div style="max-width:1500px">
+<p style="margin:0 0 40px;font-size:28px;letter-spacing:0.2em;text-transform:uppercase;color:#785F2A">Seed · US$1M · US$10–12M cap</p>
+<h1 style="margin:0;font-size:116px;font-weight:300;line-height:1;letter-spacing:-0.035em">Top operators' judgement, sold as service, software and data</h1>
+<p style="margin:48px 0 0;font-size:36px;font-weight:300;line-height:1.45;color:#44474C;max-width:1300px">Table AI turns proven industry experts' decision rules into diagnostics, AI tools and evaluation data for owner-run companies in Greater China.</p>
+</div></sc-if>
+<sc-if value="{{ zh }}" hint-placeholder-val="{{ false }}"><div style="max-width:1500px">
+<p style="margin:0 0 40px;font-size:30px;color:#785F2A">種子輪 · 100 萬美元 · 估值上限 1,000–1,200 萬美元</p>
+<h1 style="margin:0;font-size:108px;font-weight:300;line-height:1.15;letter-spacing:-0.01em">把頂尖經營者的判斷，以服務、軟件與數據出售</h1>
+<p style="margin:48px 0 0;font-size:36px;font-weight:300;line-height:1.6;color:#44474C;max-width:1300px">Table AI 把具實績的行業專家決策規則，轉化為診斷、AI 工具與評測數據，服務大中華區的企業主自營公司。</p>
+</div></sc-if>
+<sc-if value="{{ en }}" hint-placeholder-val="{{ true }}"><div style="display:flex;gap:72px;border-top:1px solid #C5C6CD;padding-top:28px;font-size:28px;color:#44474C"><span><span style="color:#0A1626;font-weight:500">15</span> paying clients</span><span><span style="color:#0A1626;font-weight:500">US$0.3M</span> ARR</span><span><span style="color:#0A1626;font-weight:500">70%</span> gross margin</span><span><span style="color:#0A1626;font-weight:500">US$0.4M</span> in proposals</span></div></sc-if>
+<sc-if value="{{ zh }}" hint-placeholder-val="{{ false }}"><div style="display:flex;gap:72px;border-top:1px solid #C5C6CD;padding-top:28px;font-size:28px;color:#44474C"><span><span style="color:#0A1626;font-weight:500">15</span> 家付費客戶</span><span>年化收入 <span style="color:#0A1626;font-weight:500">30 萬美元</span></span><span>毛利率 <span style="color:#0A1626;font-weight:500">70%</span></span><span>提案中 <span style="color:#0A1626;font-weight:500">40 萬美元</span></span></div></sc-if>
+</section>
+<section data-label="Investment case" data-screen-label="02 Investment case" style="background:#0A1626;color:#FFFFFF;font-family:Manrope,'Noto Sans TC',sans-serif;padding:100px 120px;box-sizing:border-box;display:flex;flex-direction:column">
+<sc-if value="{{ en }}" hint-placeholder-val="{{ true }}"><p style="margin:0 0 28px;font-size:26px;letter-spacing:0.3em;text-transform:uppercase;color:#BBC7DD">The investment case</p>
+<h2 style="margin:0 0 96px;font-size:80px;font-weight:300;line-height:1.05;letter-spacing:-0.03em;max-width:1600px">US$1M takes us from US$0.3M to US$2.2M ARR in 24 months</h2>
+<div style="display:grid;grid-template-columns:repeat(3,1fr);gap:56px">
+<div style="border-top:2px solid #A88B52;padding-top:36px"><span style="font-size:26px;color:#E3C284">01</span><h3 style="margin:20px 0 16px;font-size:42px;font-weight:500">A market large enough</h3><p style="margin:0;font-size:30px;line-height:1.5;color:#BBC7DD">745K buyers in China; 70K mid-market owners form a US$2.1B serviceable market. The plan needs 70.</p></div>
+<div style="border-top:1px solid #3C4759;padding-top:37px"><span style="font-size:26px;color:#BBC7DD">02</span><h3 style="margin:20px 0 16px;font-size:42px;font-weight:500">Reach we already own</h3><p style="margin:0;font-size:30px;line-height:1.5;color:#BBC7DD">Every target wedge has a named expert and a channel we control.</p></div>
+<div style="border-top:1px solid #3C4759;padding-top:37px"><span style="font-size:26px;color:#BBC7DD">03</span><h3 style="margin:20px 0 16px;font-size:42px;font-weight:500">Economics proven on 15 clients</h3><p style="margin:0;font-size:30px;line-height:1.5;color:#BBC7DD">70% gross margin today; 3–5 month payback on acquisition cost once sales is paid.</p></div>
+</div>
+<p style="margin:auto 0 0;padding-top:32px;border-top:1px solid #3C4759;font-size:30px">Next step: a regional Series A in H2 2028 at US$2.2–3M ARR.</p></sc-if>
+<sc-if value="{{ zh }}" hint-placeholder-val="{{ false }}"><p style="margin:0 0 28px;font-size:28px;color:#BBC7DD">投資論點</p>
+<h2 style="margin:0 0 96px;font-size:76px;font-weight:300;line-height:1.25;letter-spacing:-0.01em;max-width:1600px">100 萬美元，讓年化收入在 24 個月內由 30 萬增至 220 萬美元</h2>
+<div style="display:grid;grid-template-columns:repeat(3,1fr);gap:56px">
+<div style="border-top:2px solid #A88B52;padding-top:36px"><span style="font-size:26px;color:#E3C284">01</span><h3 style="margin:20px 0 16px;font-size:42px;font-weight:500">市場夠大</h3><p style="margin:0;font-size:30px;line-height:1.65;color:#BBC7DD">中國 74.5 萬個買家，其中 7 萬個中型企業主構成 21 億美元可服務市場；計劃只需 70 家。</p></div>
+<div style="border-top:1px solid #3C4759;padding-top:37px"><span style="font-size:26px;color:#BBC7DD">02</span><h3 style="margin:20px 0 16px;font-size:42px;font-weight:500">觸達已在手</h3><p style="margin:0;font-size:30px;line-height:1.65;color:#BBC7DD">每個目標楔子都有具名專家與我們掌握的管道。</p></div>
+<div style="border-top:1px solid #3C4759;padding-top:37px"><span style="font-size:26px;color:#BBC7DD">03</span><h3 style="margin:20px 0 16px;font-size:42px;font-weight:500">單位經濟已驗證</h3><p style="margin:0;font-size:30px;line-height:1.65;color:#BBC7DD">現時毛利率 70%；設立付薪銷售後，獲客成本 3–5 個月回收。</p></div>
+</div>
+<p style="margin:auto 0 0;padding-top:32px;border-top:1px solid #3C4759;font-size:30px">下一步：2028 年下半年以 220–300 萬美元 ARR 完成區內 A 輪。</p></sc-if>
+</section>
+<section data-label="Traction" data-screen-label="03 Traction" style="background:#FFFFFF;color:#0A1626;font-family:Manrope,'Noto Sans TC',sans-serif;padding:100px 120px;box-sizing:border-box;display:flex;flex-direction:column">
+<sc-if value="{{ en }}" hint-placeholder-val="{{ true }}"><p style="margin:0 0 28px;font-size:26px;letter-spacing:0.3em;text-transform:uppercase;color:#44474C">01 — Traction</p>
+<h2 style="margin:0 0 72px;font-size:76px;font-weight:300;line-height:1.05;letter-spacing:-0.03em">15 companies already pay, at 70% gross margin</h2>
+<div style="display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:#C5C6CD;border:1px solid #C5C6CD">
+<div style="background:#FFFFFF;padding:48px"><div style="font-size:100px;font-weight:300;letter-spacing:-0.04em;line-height:1">15</div><p style="margin:20px 0 0;font-size:28px;line-height:1.45;color:#44474C">paying clients, incl. listed companies and a Michelin-starred group</p></div>
+<div style="background:#FFFFFF;padding:48px"><div style="font-size:100px;font-weight:300;letter-spacing:-0.04em;line-height:1">$0.3M</div><p style="margin:20px 0 0;font-size:28px;line-height:1.45;color:#44474C">annual recurring revenue</p></div>
+<div style="background:#FFFFFF;padding:48px"><div style="font-size:100px;font-weight:300;letter-spacing:-0.04em;line-height:1;color:#785F2A">70%</div><p style="margin:20px 0 0;font-size:28px;line-height:1.45;color:#44474C">gross margin</p></div>
+<div style="background:#FFFFFF;padding:48px"><div style="font-size:100px;font-weight:300;letter-spacing:-0.04em;line-height:1">$20–100K</div><p style="margin:20px 0 0;font-size:28px;line-height:1.45;color:#44474C">contract size</p></div>
+<div style="background:#FFFFFF;padding:48px"><div style="font-size:100px;font-weight:300;letter-spacing:-0.04em;line-height:1">$0.4M</div><p style="margin:20px 0 0;font-size:28px;line-height:1.45;color:#44474C">in 5 open proposals</p></div>
+<div style="background:#FFFFFF;padding:48px"><div style="font-size:100px;font-weight:300;letter-spacing:-0.04em;line-height:1">1 wk → 1 d</div><p style="margin:20px 0 0;font-size:28px;line-height:1.45;color:#44474C">client analysis time</p></div>
+</div></sc-if>
+<sc-if value="{{ zh }}" hint-placeholder-val="{{ false }}"><p style="margin:0 0 28px;font-size:28px;color:#44474C">01 — 進展</p>
+<h2 style="margin:0 0 72px;font-size:72px;font-weight:300;line-height:1.25;letter-spacing:-0.01em">15 家企業已付費，毛利率 70%</h2>
+<div style="display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:#C5C6CD;border:1px solid #C5C6CD">
+<div style="background:#FFFFFF;padding:48px"><div style="font-size:100px;font-weight:300;letter-spacing:-0.04em;line-height:1">15</div><p style="margin:20px 0 0;font-size:28px;line-height:1.6;color:#44474C">家付費客戶，含上市公司與米其林餐飲集團</p></div>
+<div style="background:#FFFFFF;padding:48px"><div style="font-size:100px;font-weight:300;letter-spacing:-0.04em;line-height:1">$0.3M</div><p style="margin:20px 0 0;font-size:28px;line-height:1.6;color:#44474C">年化經常性收入</p></div>
+<div style="background:#FFFFFF;padding:48px"><div style="font-size:100px;font-weight:300;letter-spacing:-0.04em;line-height:1;color:#785F2A">70%</div><p style="margin:20px 0 0;font-size:28px;line-height:1.6;color:#44474C">毛利率</p></div>
+<div style="background:#FFFFFF;padding:48px"><div style="font-size:100px;font-weight:300;letter-spacing:-0.04em;line-height:1">$20–100K</div><p style="margin:20px 0 0;font-size:28px;line-height:1.6;color:#44474C">合約金額</p></div>
+<div style="background:#FFFFFF;padding:48px"><div style="font-size:100px;font-weight:300;letter-spacing:-0.04em;line-height:1">$0.4M</div><p style="margin:20px 0 0;font-size:28px;line-height:1.6;color:#44474C">5 份提案在洽</p></div>
+<div style="background:#FFFFFF;padding:48px"><div style="font-size:100px;font-weight:300;letter-spacing:-0.04em;line-height:1">1 週 → 1 天</div><p style="margin:20px 0 0;font-size:28px;line-height:1.6;color:#44474C">客戶分析時間</p></div>
+</div></sc-if>
+</section>
+<section data-label="Why they pay" data-screen-label="04 Why they pay" style="background:#FFFFFF;color:#0A1626;font-family:Manrope,'Noto Sans TC',sans-serif;padding:100px 120px;box-sizing:border-box;display:flex;flex-direction:column">
+<sc-if value="{{ en }}" hint-placeholder-val="{{ true }}"><p style="margin:0 0 28px;font-size:26px;letter-spacing:0.3em;text-transform:uppercase;color:#44474C">02 — Why they pay</p>
+<h2 style="margin:0 0 88px;font-size:76px;font-weight:300;line-height:1.05;letter-spacing:-0.03em;max-width:1600px">Owners aren't buying software. They're buying a senior operator's judgement.</h2></sc-if>
+<sc-if value="{{ zh }}" hint-placeholder-val="{{ false }}"><p style="margin:0 0 28px;font-size:28px;color:#44474C">02 — 客戶為何付費</p>
+<h2 style="margin:0 0 88px;font-size:72px;font-weight:300;line-height:1.25;letter-spacing:-0.01em;max-width:1600px">企業主買的不是軟件，而是資深經營者的判斷</h2></sc-if>
+<div style="display:grid;grid-template-columns:520px 1fr;column-gap:48px;row-gap:44px;align-items:center">
+<sc-if value="{{ en }}" hint-placeholder-val="{{ true }}"><span style="font-size:30px">Restaurant POS SaaS <span style="color:#75777D;font-size:26px">per store / yr</span></span></sc-if><sc-if value="{{ zh }}" hint-placeholder-val="{{ false }}"><span style="font-size:30px">餐飲 POS SaaS <span style="color:#75777D;font-size:26px">每店每年</span></span></sc-if>
+<div style="position:relative;height:28px;background:#F5F3F4"><div style="position:absolute;left:0;width:0.6%;height:100%;background:#0A1626"></div><span style="position:absolute;left:2%;top:-2px;font-size:26px;color:#44474C">¥2–8K (US$0.3–1.1K)</span></div>
+<sc-if value="{{ en }}" hint-placeholder-val="{{ true }}"><span style="font-size:30px">Hotel SaaS <span style="color:#75777D;font-size:26px">per hotel / yr</span></span></sc-if><sc-if value="{{ zh }}" hint-placeholder-val="{{ false }}"><span style="font-size:30px">酒店 SaaS <span style="color:#75777D;font-size:26px">每店每年</span></span></sc-if>
+<div style="position:relative;height:28px;background:#F5F3F4"><div style="position:absolute;left:0;width:0.5%;height:100%;background:#0A1626"></div><span style="position:absolute;left:2%;top:-2px;font-size:26px;color:#44474C">~¥6.5K (~US$0.9K)</span></div>
+<sc-if value="{{ en }}" hint-placeholder-val="{{ true }}"><span style="font-size:30px;font-weight:500">Table AI entry</span></sc-if><sc-if value="{{ zh }}" hint-placeholder-val="{{ false }}"><span style="font-size:30px;font-weight:500">Table AI 入門合約</span></sc-if>
+<div style="position:relative;height:28px;background:#F5F3F4"><div style="position:absolute;left:10%;width:5%;height:100%;background:#A88B52"></div><span style="position:absolute;left:17%;top:-2px;font-size:26px;color:#785F2A;font-weight:500">US$20–30K</span></div>
+<sc-if value="{{ en }}" hint-placeholder-val="{{ true }}"><span style="font-size:30px">Consulting project or senior hire</span></sc-if><sc-if value="{{ zh }}" hint-placeholder-val="{{ false }}"><span style="font-size:30px">諮詢項目或資深高管</span></sc-if>
+<div style="position:relative;height:28px;background:#F5F3F4"><div style="position:absolute;left:25%;width:75%;height:100%;background:#0A1626"></div></div>
+<span></span><div style="display:flex;justify-content:space-between;font-size:24px;color:#75777D"><span>US$0</span><span style="margin-left:22%">US$50K</span><span>US$200K</span></div>
+</div>
+<sc-if value="{{ en }}" hint-placeholder-val="{{ true }}"><p style="margin:auto 0 0;padding-top:32px;border-top:1px solid #0A1626;font-size:32px">We price against the consulting budget, not the software budget.<span style="display:block;margin-top:12px;font-size:24px;color:#75777D">Sources: Keruyun, Shiji 2024 annual reports; Inex One pricing guide</span></p></sc-if>
+<sc-if value="{{ zh }}" hint-placeholder-val="{{ false }}"><p style="margin:auto 0 0;padding-top:32px;border-top:1px solid #0A1626;font-size:32px">我們對標的是諮詢預算，而不是軟件預算。<span style="display:block;margin-top:12px;font-size:24px;color:#75777D">來源：客如雲、石基 2024 年報；Inex One 定價指南</span></p></sc-if>
+</section>
+<section data-label="Market" data-screen-label="05 Market" style="background:#FFFFFF;color:#0A1626;font-family:Manrope,'Noto Sans TC',sans-serif;padding:100px 120px;box-sizing:border-box;display:flex;flex-direction:column">
+<sc-if value="{{ en }}" hint-placeholder-val="{{ true }}"><p style="margin:0 0 28px;font-size:26px;letter-spacing:0.3em;text-transform:uppercase;color:#44474C">03 — Market</p>
+<h2 style="margin:0 0 80px;font-size:76px;font-weight:300;line-height:1.05;letter-spacing:-0.03em;max-width:1600px">745,000 buyers. The 24-month plan needs 70.</h2>
+<div style="display:flex;flex-direction:column;gap:40px">
+<div style="display:grid;grid-template-columns:200px 1fr 360px;gap:40px;align-items:center"><span style="font-size:26px;letter-spacing:0.15em;color:#44474C">TOTAL</span><div style="height:72px;background:#E4E2E4;display:flex;align-items:center;padding:0 28px;font-size:28px">Every buyer who signs, four clienteles, China</div><div><div style="font-size:56px;font-weight:300;letter-spacing:-0.03em;line-height:1">745K · $22B</div></div></div>
+<div style="display:grid;grid-template-columns:200px 1fr 360px;gap:40px;align-items:center"><span style="font-size:26px;letter-spacing:0.15em;color:#44474C">SERVICEABLE</span><div style="height:72px;width:42%;background:#0A1626;color:#FFFFFF;display:flex;align-items:center;padding:0 28px;font-size:28px;white-space:nowrap">Mid-market, owner-run</div><div><div style="font-size:56px;font-weight:300;letter-spacing:-0.03em;line-height:1">70K · $2.1B</div></div></div>
+<div style="display:grid;grid-template-columns:200px 1fr 360px;gap:40px;align-items:center"><span style="font-size:26px;letter-spacing:0.15em;color:#785F2A">PLAN</span><div style="display:flex;align-items:center;gap:24px"><div style="height:72px;width:12px;background:#A88B52"></div><span style="font-size:28px">70 clients by month 24 · 150 by 2029</span></div><div><div style="font-size:56px;font-weight:300;letter-spacing:-0.03em;line-height:1;color:#785F2A">$6M ARR</div></div></div>
+</div>
+<p style="margin:auto 0 0;padding-top:28px;border-top:1px solid #C5C6CD;font-size:26px;line-height:1.5;color:#44474C">Counted by the buyer who signs (owner, investor group or licensed institution), not outlets or properties. US$30K average contract; 1,000 clients would be US$30M ARR, 1.4% of serviceable. Hong Kong, Singapore and Switzerland excluded. Top-down check: China management consulting &gt;US$60B; China AI data services US$1.1B, +25% a year.</p></sc-if>
+<sc-if value="{{ zh }}" hint-placeholder-val="{{ false }}"><p style="margin:0 0 28px;font-size:28px;color:#44474C">03 — 市場</p>
+<h2 style="margin:0 0 80px;font-size:72px;font-weight:300;line-height:1.25;letter-spacing:-0.01em;max-width:1600px">74.5 萬個買家，24 個月計劃只需 70 家</h2>
+<div style="display:flex;flex-direction:column;gap:40px">
+<div style="display:grid;grid-template-columns:200px 1fr 360px;gap:40px;align-items:center"><span style="font-size:28px;color:#44474C">總市場</span><div style="height:72px;background:#E4E2E4;display:flex;align-items:center;padding:0 28px;font-size:28px">中國四類客群的全部簽約買家</div><div style="font-size:56px;font-weight:300;letter-spacing:-0.03em;line-height:1">74.5 萬 · $22B</div></div>
+<div style="display:grid;grid-template-columns:200px 1fr 360px;gap:40px;align-items:center"><span style="font-size:28px;color:#44474C">可服務</span><div style="height:72px;width:42%;background:#0A1626;color:#FFFFFF;display:flex;align-items:center;padding:0 28px;font-size:28px;white-space:nowrap">中型、企業主自營</div><div style="font-size:56px;font-weight:300;letter-spacing:-0.03em;line-height:1">7 萬 · $2.1B</div></div>
+<div style="display:grid;grid-template-columns:200px 1fr 360px;gap:40px;align-items:center"><span style="font-size:28px;color:#785F2A">計劃</span><div style="display:flex;align-items:center;gap:24px"><div style="height:72px;width:12px;background:#A88B52"></div><span style="font-size:28px">第 24 個月 70 家 · 2029 年 150 家</span></div><div style="font-size:56px;font-weight:300;letter-spacing:-0.03em;line-height:1;color:#785F2A">$6M ARR</div></div>
+</div>
+<p style="margin:auto 0 0;padding-top:28px;border-top:1px solid #C5C6CD;font-size:26px;line-height:1.6;color:#44474C">以簽約買家計算（業主、投資人集團或持牌機構），非門店或物業；平均合約 3 萬美元，1,000 家客戶即 3,000 萬美元 ARR，僅佔可服務市場 1.4%。不含香港、新加坡與瑞士。自上而下核對：中國管理諮詢逾 600 億美元；中國 AI 基礎數據服務 11 億美元，年增 25%。</p></sc-if>
+</section>
+<section data-label="Wedges" data-screen-label="06 Wedges" style="background:#FFFFFF;color:#0A1626;font-family:Manrope,'Noto Sans TC',sans-serif;padding:100px 120px;box-sizing:border-box;display:flex;flex-direction:column">
+<sc-if value="{{ en }}" hint-placeholder-val="{{ true }}"><p style="margin:0 0 28px;font-size:26px;letter-spacing:0.3em;text-transform:uppercase;color:#44474C">04 — Target wedges</p>
+<h2 style="margin:0 0 56px;font-size:72px;font-weight:300;line-height:1.05;letter-spacing:-0.03em">Four wedges, each with a reason to buy now</h2>
+<div style="display:grid;grid-template-columns:440px 1fr 220px 200px;font-size:28px;line-height:1.4">
+<span style="font-size:24px;letter-spacing:0.12em;text-transform:uppercase;color:#44474C;padding-bottom:16px;border-bottom:1px solid #0A1626">Wedge</span><span style="font-size:24px;letter-spacing:0.12em;text-transform:uppercase;color:#44474C;padding-bottom:16px;border-bottom:1px solid #0A1626">Why now</span><span style="font-size:24px;letter-spacing:0.12em;text-transform:uppercase;color:#44474C;padding-bottom:16px;border-bottom:1px solid #0A1626;text-align:right">Serviceable</span><span style="font-size:24px;letter-spacing:0.12em;text-transform:uppercase;color:#44474C;padding-bottom:16px;border-bottom:1px solid #0A1626;text-align:right">24-mo target</span>
+<span style="padding:28px 0;border-bottom:1px solid #C5C6CD;font-weight:500">F&amp;B chain owners<br><span style="font-weight:400;color:#44474C;font-size:24px">brands, franchise groups, investors</span></span><span style="padding:28px 24px 28px 0;border-bottom:1px solid #C5C6CD;color:#44474C">3.39M closures in 2025 (+9.4%); growth is in the 101–500 tier</span><span style="padding:28px 0;border-bottom:1px solid #C5C6CD;text-align:right">7.5K<br><span style="color:#44474C;font-size:24px">of 150K</span></span><span style="padding:28px 0;border-bottom:1px solid #C5C6CD;text-align:right;font-size:40px;font-weight:300">30</span>
+<span style="padding:28px 0;border-bottom:1px solid #C5C6CD;font-weight:500">Hotel owners &amp; investors<br><span style="font-weight:400;color:#44474C;font-size:24px">owner groups, 10+ hotels</span></span><span style="padding:28px 24px 28px 0;border-bottom:1px solid #C5C6CD;color:#44474C">10.9M independent rooms compete with chains (41.8% chained)</span><span style="padding:28px 0;border-bottom:1px solid #C5C6CD;text-align:right">3.5K<br><span style="color:#44474C;font-size:24px">of 200K</span></span><span style="padding:28px 0;border-bottom:1px solid #C5C6CD;text-align:right;font-size:40px;font-weight:300">15</span>
+<span style="padding:28px 0;border-bottom:1px solid #C5C6CD;font-weight:500">Manufacturers<br><span style="font-weight:400;color:#44474C;font-size:24px">owner-run, US$15–150M revenue</span></span><span style="padding:28px 24px 28px 0;border-bottom:1px solid #C5C6CD;color:#44474C">2025 industrial profit +0.6%; owners buy cost and growth expertise</span><span style="padding:28px 0;border-bottom:1px solid #C5C6CD;text-align:right">55K<br><span style="color:#44474C;font-size:24px">of 350K</span></span><span style="padding:28px 0;border-bottom:1px solid #C5C6CD;text-align:right;font-size:40px;font-weight:300">15</span>
+<span style="padding:28px 0;border-bottom:1px solid #C5C6CD;font-weight:500">Financial services<br><span style="font-weight:400;color:#44474C;font-size:24px">via a top-4 bank-IT partner</span></span><span style="padding:28px 24px 28px 0;border-bottom:1px solid #C5C6CD;color:#44474C">53.5% of banks run LLMs; "financial agents" defined by regulator, Jun 2026</span><span style="padding:28px 0;border-bottom:1px solid #C5C6CD;text-align:right">4K<br><span style="color:#44474C;font-size:24px">of 43K</span></span><span style="padding:28px 0;border-bottom:1px solid #C5C6CD;text-align:right;font-size:40px;font-weight:300">5–8</span>
+</div>
+<p style="margin:auto 0 0;font-size:24px;color:#75777D">Sources: CCFA × Meituan, Apr 2026; China Hotel Association, Apr 2026; MIIT, Jan 2025; NBS, Jan 2026; NFRA; Shadow Think Tank bank-LLM survey, Apr 2026</p></sc-if>
+<sc-if value="{{ zh }}" hint-placeholder-val="{{ false }}"><p style="margin:0 0 28px;font-size:28px;color:#44474C">04 — 目標楔子</p>
+<h2 style="margin:0 0 56px;font-size:68px;font-weight:300;line-height:1.25;letter-spacing:-0.01em">四個楔子，各有現在就買的理由</h2>
+<div style="display:grid;grid-template-columns:440px 1fr 220px 200px;font-size:28px;line-height:1.5">
+<span style="font-size:26px;color:#44474C;padding-bottom:16px;border-bottom:1px solid #0A1626">楔子</span><span style="font-size:26px;color:#44474C;padding-bottom:16px;border-bottom:1px solid #0A1626">為何現在買</span><span style="font-size:26px;color:#44474C;padding-bottom:16px;border-bottom:1px solid #0A1626;text-align:right">可服務數</span><span style="font-size:26px;color:#44474C;padding-bottom:16px;border-bottom:1px solid #0A1626;text-align:right">24 個月目標</span>
+<span style="padding:28px 0;border-bottom:1px solid #C5C6CD;font-weight:500">餐飲連鎖業主<br><span style="font-weight:400;color:#44474C;font-size:24px">品牌業主、加盟集團、投資人</span></span><span style="padding:28px 24px 28px 0;border-bottom:1px solid #C5C6CD;color:#44474C">2025 年關店 339 萬家（+9.4%）；增長集中在 101–500 店層級</span><span style="padding:28px 0;border-bottom:1px solid #C5C6CD;text-align:right">7,500<br><span style="color:#44474C;font-size:24px">共 15 萬</span></span><span style="padding:28px 0;border-bottom:1px solid #C5C6CD;text-align:right;font-size:40px;font-weight:300">30</span>
+<span style="padding:28px 0;border-bottom:1px solid #C5C6CD;font-weight:500">酒店業主與投資人<br><span style="font-weight:400;color:#44474C;font-size:24px">業主集團，10 家以上</span></span><span style="padding:28px 24px 28px 0;border-bottom:1px solid #C5C6CD;color:#44474C">1,090 萬間單體客房面對連鎖競爭（連鎖化率 41.8%）</span><span style="padding:28px 0;border-bottom:1px solid #C5C6CD;text-align:right">3,500<br><span style="color:#44474C;font-size:24px">共 20 萬</span></span><span style="padding:28px 0;border-bottom:1px solid #C5C6CD;text-align:right;font-size:40px;font-weight:300">15</span>
+<span style="padding:28px 0;border-bottom:1px solid #C5C6CD;font-weight:500">製造企業<br><span style="font-weight:400;color:#44474C;font-size:24px">企業主自營，年收入 1–10 億元</span></span><span style="padding:28px 24px 28px 0;border-bottom:1px solid #C5C6CD;color:#44474C">2025 年規上工業利潤僅增 0.6%；企業主購買降本與增長專業知識</span><span style="padding:28px 0;border-bottom:1px solid #C5C6CD;text-align:right">5.5 萬<br><span style="color:#44474C;font-size:24px">共 35 萬</span></span><span style="padding:28px 0;border-bottom:1px solid #C5C6CD;text-align:right;font-size:40px;font-weight:300">15</span>
+<span style="padding:28px 0;border-bottom:1px solid #C5C6CD;font-weight:500">金融服務機構<br><span style="font-weight:400;color:#44474C;font-size:24px">經前四大銀行 IT 夥伴觸達</span></span><span style="padding:28px 24px 28px 0;border-bottom:1px solid #C5C6CD;color:#44474C">53.5% 銀行已部署大模型；監管 2026 年 6 月定義「金融智能體」</span><span style="padding:28px 0;border-bottom:1px solid #C5C6CD;text-align:right">4,000<br><span style="color:#44474C;font-size:24px">共 4.3 萬</span></span><span style="padding:28px 0;border-bottom:1px solid #C5C6CD;text-align:right;font-size:40px;font-weight:300">5–8</span>
+</div>
+<p style="margin:auto 0 0;font-size:24px;color:#75777D">來源：CCFA × 美團，2026 年 4 月；中國飯店協會，2026 年 4 月；工信部，2025 年 1 月；國家統計局，2026 年 1 月；金監總局；沙丘智庫銀行大模型調研，2026 年 4 月</p></sc-if>
+</section>
+<section data-label="Reach" data-screen-label="07 Reach" style="background:#FFFFFF;color:#0A1626;font-family:Manrope,'Noto Sans TC',sans-serif;padding:100px 120px;box-sizing:border-box;display:flex;flex-direction:column">
+<sc-if value="{{ en }}" hint-placeholder-val="{{ true }}"><p style="margin:0 0 28px;font-size:26px;letter-spacing:0.3em;text-transform:uppercase;color:#44474C">05 — Reach</p>
+<h2 style="margin:0 0 72px;font-size:76px;font-weight:300;line-height:1.05;letter-spacing:-0.03em">We sell into networks we already own</h2>
+<div style="display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:#C5C6CD;border:1px solid #C5C6CD">
+<div style="background:#FFFFFF;padding:44px"><div style="font-size:80px;font-weight:300;letter-spacing:-0.04em;line-height:1">100+</div><p style="margin:20px 0 0;font-size:28px;line-height:1.45;color:#44474C">restaurant brands served by our restaurant expert's studio</p></div>
+<div style="background:#FFFFFF;padding:44px"><div style="font-size:80px;font-weight:300;letter-spacing:-0.04em;line-height:1">EHL</div><p style="margin:20px 0 0;font-size:28px;line-height:1.45;color:#44474C">hospitality alumni; founder built EHL's China business, 2015–25</p></div>
+<div style="background:#FFFFFF;padding:44px"><div style="font-size:80px;font-weight:300;letter-spacing:-0.04em;line-height:1">Owners</div><p style="margin:20px 0 0;font-size:28px;line-height:1.45;color:#44474C">business owners and family offices via the Table AI Golf Club</p></div>
+<div style="background:#FFFFFF;padding:44px"><div style="font-size:80px;font-weight:300;letter-spacing:-0.04em;line-height:1;color:#785F2A">1,000+</div><p style="margin:20px 0 0;font-size:28px;line-height:1.45;color:#44474C">OPC Global members, incl. 50+ top experts with their own clients</p></div>
+</div>
+<div style="margin-top:auto;display:grid;grid-template-columns:1fr 1fr;gap:56px;padding-top:32px;border-top:1px solid #0A1626;font-size:28px;line-height:1.5"><p style="margin:0"><span style="color:#44474C">Series A funds</span> a sales team that goes beyond these networks.</p><p style="margin:0"><span style="color:#44474C">We don't sell to</span> single-store restaurants, large SOEs or US frontier labs.</p></div></sc-if>
+<sc-if value="{{ zh }}" hint-placeholder-val="{{ false }}"><p style="margin:0 0 28px;font-size:28px;color:#44474C">05 — 觸達</p>
+<h2 style="margin:0 0 72px;font-size:72px;font-weight:300;line-height:1.25;letter-spacing:-0.01em">我們通過已有的網絡銷售</h2>
+<div style="display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:#C5C6CD;border:1px solid #C5C6CD">
+<div style="background:#FFFFFF;padding:44px"><div style="font-size:80px;font-weight:300;letter-spacing:-0.04em;line-height:1">100+</div><p style="margin:20px 0 0;font-size:28px;line-height:1.6;color:#44474C">餐飲專家工作室服務過的品牌</p></div>
+<div style="background:#FFFFFF;padding:44px"><div style="font-size:80px;font-weight:300;letter-spacing:-0.04em;line-height:1">EHL</div><p style="margin:20px 0 0;font-size:28px;line-height:1.6;color:#44474C">酒店業校友；創始人 2015–2025 年搭建 EHL 中國業務</p></div>
+<div style="background:#FFFFFF;padding:44px"><div style="font-size:80px;font-weight:300;letter-spacing:-0.02em;line-height:1">企業主</div><p style="margin:20px 0 0;font-size:28px;line-height:1.6;color:#44474C">透過 Table AI 高爾夫俱樂部連接企業主與家族辦公室</p></div>
+<div style="background:#FFFFFF;padding:44px"><div style="font-size:80px;font-weight:300;letter-spacing:-0.04em;line-height:1;color:#785F2A">1,000+</div><p style="margin:20px 0 0;font-size:28px;line-height:1.6;color:#44474C">OPC Global 成員，含 50+ 位自帶客戶的頂尖專家</p></div>
+</div>
+<div style="margin-top:auto;display:grid;grid-template-columns:1fr 1fr;gap:56px;padding-top:32px;border-top:1px solid #0A1626;font-size:28px;line-height:1.6"><p style="margin:0"><span style="color:#44474C">A 輪資金</span>才用於建立走出網絡的銷售團隊。</p><p style="margin:0"><span style="color:#44474C">我們不做</span>單店餐廳、大型國企與美國前沿實驗室。</p></div></sc-if>
+</section>
+<section data-label="Business lines" data-screen-label="08 Business lines" style="background:#FFFFFF;color:#0A1626;font-family:Manrope,'Noto Sans TC',sans-serif;padding:100px 120px;box-sizing:border-box;display:flex;flex-direction:column">
+<sc-if value="{{ en }}" hint-placeholder-val="{{ true }}"><p style="margin:0 0 28px;font-size:26px;letter-spacing:0.3em;text-transform:uppercase;color:#44474C">06 — Business lines</p>
+<h2 style="margin:0 0 64px;font-size:76px;font-weight:300;line-height:1.05;letter-spacing:-0.03em">One asset, the expert rule base, sold three ways</h2>
+<div style="display:grid;grid-template-columns:repeat(3,1fr);gap:40px;flex:1">
+<div style="border:1px solid #C5C6CD;padding:44px;display:flex;flex-direction:column"><span style="font-size:26px;letter-spacing:0.2em;color:#44474C">A · SERVICE</span><h3 style="margin:16px 0 16px;font-size:40px;font-weight:500;line-height:1.2">Expert diagnosis &amp; coaching</h3><p style="margin:0;font-size:27px;line-height:1.5;color:#44474C">7-day diagnosis of six months' data; monthly coaching to agreed targets.</p><div style="margin-top:auto;display:flex;flex-direction:column;gap:12px;padding-top:28px;border-top:1px solid #C5C6CD;font-size:26px"><span>US$15–30K diagnosis · US$2–5K / month</span><span style="color:#44474C">60–65% margin</span><span style="color:#785F2A">Live: 15 clients</span></div></div>
+<div style="border:1px solid #C5C6CD;padding:44px;display:flex;flex-direction:column"><span style="font-size:26px;letter-spacing:0.2em;color:#44474C">B · SOFTWARE</span><h3 style="margin:16px 0 16px;font-size:40px;font-weight:500;line-height:1.2">Expert AI tools + outcome fee</h3><p style="margin:0;font-size:27px;line-height:1.5;color:#44474C">Expert rules as assistants the team uses daily: menu, pricing, staffing, procurement, credit.</p><div style="margin-top:auto;display:flex;flex-direction:column;gap:12px;padding-top:28px;border-top:1px solid #C5C6CD;font-size:26px"><span>US$30–100K / yr + 10–15% of gains</span><span style="color:#44474C">75–80% margin</span><span style="color:#44474C">Prototype; paid deployments H1 2027</span></div></div>
+<div style="border:1px solid #C5C6CD;padding:44px;display:flex;flex-direction:column"><span style="font-size:26px;letter-spacing:0.2em;color:#44474C">C · DATA</span><h3 style="margin:16px 0 16px;font-size:40px;font-weight:500;line-height:1.2">Expert data, rubrics &amp; evals</h3><p style="margin:0;font-size:27px;line-height:1.5;color:#44474C">De-identified rules and benchmarks that test whether AI decides like the expert.</p><div style="margin-top:auto;display:flex;flex-direction:column;gap:12px;padding-top:28px;border-top:1px solid #C5C6CD;font-size:26px"><span>US$50–150K / project · evals US$20–50K / yr</span><span style="color:#44474C">70% margin</span><span style="color:#44474C">Pipeline: listed bank-IT vendor</span></div></div>
+</div></sc-if>
+<sc-if value="{{ zh }}" hint-placeholder-val="{{ false }}"><p style="margin:0 0 28px;font-size:28px;color:#44474C">06 — 業務線</p>
+<h2 style="margin:0 0 64px;font-size:72px;font-weight:300;line-height:1.25;letter-spacing:-0.01em">同一項資產——專家規則庫，以三種形式出售</h2>
+<div style="display:grid;grid-template-columns:repeat(3,1fr);gap:40px;flex:1">
+<div style="border:1px solid #C5C6CD;padding:44px;display:flex;flex-direction:column"><span style="font-size:26px;color:#44474C">A · 服務</span><h3 style="margin:16px 0 16px;font-size:40px;font-weight:500;line-height:1.3">專家診斷與陪跑</h3><p style="margin:0;font-size:27px;line-height:1.65;color:#44474C">7 天診斷六個月經營數據；按約定目標每月陪跑。</p><div style="margin-top:auto;display:flex;flex-direction:column;gap:12px;padding-top:28px;border-top:1px solid #C5C6CD;font-size:26px"><span>診斷 1.5–3 萬美元 · 每月 2,000–5,000 美元</span><span style="color:#44474C">毛利 60–65%</span><span style="color:#785F2A">已上線：15 家客戶</span></div></div>
+<div style="border:1px solid #C5C6CD;padding:44px;display:flex;flex-direction:column"><span style="font-size:26px;color:#44474C">B · 軟件</span><h3 style="margin:16px 0 16px;font-size:40px;font-weight:500;line-height:1.3">專家 AI 工具 + 成效費</h3><p style="margin:0;font-size:27px;line-height:1.65;color:#44474C">把專家規則變成團隊每天使用的助手：菜單、定價、排班、採購、信貸。</p><div style="margin-top:auto;display:flex;flex-direction:column;gap:12px;padding-top:28px;border-top:1px solid #C5C6CD;font-size:26px"><span>每年 3–10 萬美元 + 增益的 10–15%</span><span style="color:#44474C">毛利 75–80%</span><span style="color:#44474C">原型；2027 上半年首批付費部署</span></div></div>
+<div style="border:1px solid #C5C6CD;padding:44px;display:flex;flex-direction:column"><span style="font-size:26px;color:#44474C">C · 數據</span><h3 style="margin:16px 0 16px;font-size:40px;font-weight:500;line-height:1.3">專家數據、評分標準與評測</h3><p style="margin:0;font-size:27px;line-height:1.65;color:#44474C">去識別化的規則與基準，測試 AI 是否像專家一樣判斷。</p><div style="margin-top:auto;display:flex;flex-direction:column;gap:12px;padding-top:28px;border-top:1px solid #C5C6CD;font-size:26px"><span>每項目 5–15 萬美元 · 評測每年 2–5 萬</span><span style="color:#44474C">毛利 70%</span><span style="color:#44474C">管道：上市銀行 IT 商</span></div></div>
+</div></sc-if>
+</section>
+<section data-label="Flywheel" data-screen-label="09 Flywheel" style="background:#FFFFFF;color:#0A1626;font-family:Manrope,'Noto Sans TC',sans-serif;padding:100px 120px;box-sizing:border-box;display:flex;flex-direction:column">
+<sc-if value="{{ en }}" hint-placeholder-val="{{ true }}"><p style="margin:0 0 28px;font-size:26px;letter-spacing:0.3em;text-transform:uppercase;color:#44474C">07 — How the lines connect</p>
+<h2 style="margin:0 0 72px;font-size:76px;font-weight:300;line-height:1.05;letter-spacing:-0.03em">Services win the client. Software keeps it. Data resells it.</h2></sc-if>
+<sc-if value="{{ zh }}" hint-placeholder-val="{{ false }}"><p style="margin:0 0 28px;font-size:28px;color:#44474C">07 — 三條線如何相連</p>
+<h2 style="margin:0 0 72px;font-size:72px;font-weight:300;line-height:1.25;letter-spacing:-0.01em">服務贏下客戶，軟件留住客戶，數據再賣一次</h2></sc-if>
+<div style="display:grid;grid-template-columns:7fr 5fr;gap:96px;flex:1">
+<div style="display:flex;flex-direction:column;border-top:1px solid #0A1626">
+<sc-if value="{{ en }}" hint-placeholder-val="{{ true }}"><div style="display:grid;grid-template-columns:72px 1fr;padding:26px 0;border-bottom:1px solid #C5C6CD;font-size:30px"><span style="color:#44474C;font-size:26px">01</span><span>Client enters with a <b style="font-weight:500">US$20–30K diagnosis</b></span></div>
+<div style="display:grid;grid-template-columns:72px 1fr;padding:26px 0;border-bottom:1px solid #C5C6CD;font-size:30px"><span style="color:#44474C;font-size:26px">02</span><span><b style="font-weight:500">Half</b> convert to coaching within a quarter</span></div>
+<div style="display:grid;grid-template-columns:72px 1fr;padding:26px 0;border-bottom:1px solid #C5C6CD;font-size:30px"><span style="color:#44474C;font-size:26px">03</span><span><b style="font-weight:500">40%</b> adopt AI tools next year at US$40–60K, on multi-year terms</span></div>
+<div style="display:grid;grid-template-columns:72px 1fr;padding:26px 0;border-bottom:1px solid #C5C6CD;font-size:30px"><span style="color:#785F2A;font-size:26px">04</span><span>Every rule is de-identified, pooled by industry and <b style="font-weight:500">resold as data</b>, its cost already paid</span></div></sc-if>
+<sc-if value="{{ zh }}" hint-placeholder-val="{{ false }}"><div style="display:grid;grid-template-columns:72px 1fr;padding:26px 0;border-bottom:1px solid #C5C6CD;font-size:30px"><span style="color:#44474C;font-size:26px">01</span><span>客戶以 <b style="font-weight:500">2–3 萬美元診斷</b>進入</span></div>
+<div style="display:grid;grid-template-columns:72px 1fr;padding:26px 0;border-bottom:1px solid #C5C6CD;font-size:30px"><span style="color:#44474C;font-size:26px">02</span><span>約<b style="font-weight:500">一半</b>在一個季度內轉為陪跑</span></div>
+<div style="display:grid;grid-template-columns:72px 1fr;padding:26px 0;border-bottom:1px solid #C5C6CD;font-size:30px"><span style="color:#44474C;font-size:26px">03</span><span><b style="font-weight:500">40%</b> 翌年以 4–6 萬美元採用 AI 工具，轉為多年合約</span></div>
+<div style="display:grid;grid-template-columns:72px 1fr;padding:26px 0;border-bottom:1px solid #C5C6CD;font-size:30px"><span style="color:#785F2A;font-size:26px">04</span><span>每條規則去識別化後按行業彙集，<b style="font-weight:500">作為數據再售</b>，成本已付過</span></div></sc-if>
+</div>
+<div style="display:flex;flex-direction:column;gap:40px">
+<sc-if value="{{ en }}" hint-placeholder-val="{{ true }}"><p style="margin:0;font-size:26px;letter-spacing:0.15em;text-transform:uppercase;color:#44474C">Revenue mix</p></sc-if><sc-if value="{{ zh }}" hint-placeholder-val="{{ false }}"><p style="margin:0;font-size:28px;color:#44474C">收入組合</p></sc-if>
+<div><div style="display:flex;justify-content:space-between;font-size:26px;margin-bottom:12px"><span>2026</span><span style="color:#44474C">A 85%</span></div><div style="display:flex;height:48px"><div style="width:85%;background:#0A1626"></div><div style="width:15%;background:#C5C6CD"></div></div></div>
+<div><div style="display:flex;justify-content:space-between;font-size:26px;margin-bottom:12px"><span>2029</span><span style="color:#44474C">A 30% · B 50% · C 20%</span></div><div style="display:flex;height:48px;gap:2px"><div style="width:30%;background:#0A1626"></div><div style="width:50%;background:#A88B52"></div><div style="width:20%;background:#545F72"></div></div></div>
+<sc-if value="{{ en }}" hint-placeholder-val="{{ true }}"><p style="margin:auto 0 0;font-size:28px;line-height:1.5">Blended margin rises to <b style="font-weight:500">72%</b> and the multiple moves from consulting toward software.</p></sc-if>
+<sc-if value="{{ zh }}" hint-placeholder-val="{{ false }}"><p style="margin:auto 0 0;font-size:28px;line-height:1.6">綜合毛利升至 <b style="font-weight:500">72%</b>，估值倍數由諮詢走向軟件。</p></sc-if>
+</div>
+</div>
+</section>
+<section data-label="Unit economics" data-screen-label="10 Unit economics" style="background:#FFFFFF;color:#0A1626;font-family:Manrope,'Noto Sans TC',sans-serif;padding:100px 120px;box-sizing:border-box;display:flex;flex-direction:column">
+<sc-if value="{{ en }}" hint-placeholder-val="{{ true }}"><p style="margin:0 0 28px;font-size:26px;letter-spacing:0.3em;text-transform:uppercase;color:#44474C">08 — Unit economics</p>
+<h2 style="margin:0 0 72px;font-size:76px;font-weight:300;line-height:1.05;letter-spacing:-0.03em;max-width:1600px">A US$20K diagnosis costs US$5–8K in expert time</h2></sc-if>
+<sc-if value="{{ zh }}" hint-placeholder-val="{{ false }}"><p style="margin:0 0 28px;font-size:28px;color:#44474C">08 — 單位經濟</p>
+<h2 style="margin:0 0 72px;font-size:72px;font-weight:300;line-height:1.25;letter-spacing:-0.01em;max-width:1600px">一次 2 萬美元的診斷，專家成本 5,000–8,000 美元</h2></sc-if>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:96px">
+<div style="display:flex;flex-direction:column;border-top:1px solid #0A1626;font-size:30px">
+<div style="display:flex;justify-content:space-between;padding:26px 0;border-bottom:1px solid #C5C6CD"><sc-if value="{{ en }}" hint-placeholder-val="{{ true }}"><span>Expert hours per diagnosis</span></sc-if><sc-if value="{{ zh }}" hint-placeholder-val="{{ false }}"><span>每次診斷專家工時</span></sc-if><span>25–35</span></div>
+<div style="display:flex;justify-content:space-between;padding:26px 0;border-bottom:1px solid #C5C6CD"><sc-if value="{{ en }}" hint-placeholder-val="{{ true }}"><span>× rate per hour</span></sc-if><sc-if value="{{ zh }}" hint-placeholder-val="{{ false }}"><span>× 每小時費率</span></sc-if><span>US$150–250</span></div>
+<div style="display:flex;justify-content:space-between;padding:26px 0;border-bottom:1px solid #C5C6CD"><sc-if value="{{ en }}" hint-placeholder-val="{{ true }}"><span>= Expert cost</span></sc-if><sc-if value="{{ zh }}" hint-placeholder-val="{{ false }}"><span>= 專家成本</span></sc-if><span>US$5–8K</span></div>
+<div style="display:flex;justify-content:space-between;align-items:baseline;padding:26px 0;border-bottom:1px solid #C5C6CD"><sc-if value="{{ en }}" hint-placeholder-val="{{ true }}"><span style="font-weight:500">Gross margin</span></sc-if><sc-if value="{{ zh }}" hint-placeholder-val="{{ false }}"><span style="font-weight:500">毛利率</span></sc-if><span style="font-size:64px;font-weight:300;color:#785F2A;line-height:1">70%</span></div>
+</div>
+<div style="display:flex;flex-direction:column;gap:1px;background:#C5C6CD;border:1px solid #C5C6CD;align-self:start">
+<div style="background:#FFFFFF;padding:36px 44px"><div style="font-size:72px;font-weight:300;letter-spacing:-0.03em;line-height:1">3–5 mo</div><sc-if value="{{ en }}" hint-placeholder-val="{{ true }}"><p style="margin:14px 0 0;font-size:26px;line-height:1.45;color:#44474C">payback on US$6–8K acquisition cost, vs 5–8 mo SaaS median</p></sc-if><sc-if value="{{ zh }}" hint-placeholder-val="{{ false }}"><p style="margin:14px 0 0;font-size:26px;line-height:1.6;color:#44474C">6,000–8,000 美元獲客成本的回收期；SaaS 中位數 5–8 個月</p></sc-if></div>
+<div style="background:#FFFFFF;padding:36px 44px"><div style="font-size:72px;font-weight:300;letter-spacing:-0.03em;line-height:1">$20K → $30K</div><sc-if value="{{ en }}" hint-placeholder-val="{{ true }}"><p style="margin:14px 0 0;font-size:26px;line-height:1.45;color:#44474C">average contract as tools and outcome fees attach</p></sc-if><sc-if value="{{ zh }}" hint-placeholder-val="{{ false }}"><p style="margin:14px 0 0;font-size:26px;line-height:1.6;color:#44474C">附加工具與成效費後的平均合約</p></sc-if></div>
+</div>
+</div>
+<p style="margin:auto 0 0;font-size:24px;color:#75777D">SaaS median for companies under US$5M ARR: High Alpha 2025 benchmarks · 首 15 家客戶來自自有網絡，銷售成本極低</p>
+</section>
+<section data-label="Forecast" data-screen-label="11 Forecast" style="background:#FFFFFF;color:#0A1626;font-family:Manrope,'Noto Sans TC',sans-serif;padding:100px 120px;box-sizing:border-box;display:flex;flex-direction:column">
+<sc-if value="{{ en }}" hint-placeholder-val="{{ true }}"><p style="margin:0 0 28px;font-size:26px;letter-spacing:0.3em;text-transform:uppercase;color:#44474C">09 — Three-year forecast</p>
+<h2 style="margin:0 0 40px;font-size:64px;font-weight:300;line-height:1.05;letter-spacing:-0.03em">US$0.3M → US$6M ARR by 2029; ~US$0.95M net burn to Series A</h2></sc-if>
+<sc-if value="{{ zh }}" hint-placeholder-val="{{ false }}"><p style="margin:0 0 28px;font-size:28px;color:#44474C">09 — 三年預測</p>
+<h2 style="margin:0 0 40px;font-size:60px;font-weight:300;line-height:1.2;letter-spacing:-0.01em">年化收入 30 萬 → 2029 年 600 萬美元；到 A 輪淨燒錢約 95 萬</h2></sc-if>
+<table style="width:100%;border-collapse:collapse;font-size:27px;font-variant-numeric:tabular-nums">
+<thead><tr style="font-size:24px;letter-spacing:0.1em;color:#44474C"><th style="text-align:left;font-weight:500;padding:0 0 16px;border-bottom:1px solid #0A1626">US$M</th><th style="text-align:right;font-weight:500;padding:0 0 16px;border-bottom:1px solid #0A1626">2026 RUN-RATE</th><th style="text-align:right;font-weight:500;padding:0 0 16px;border-bottom:1px solid #0A1626">2027</th><th style="text-align:right;font-weight:500;padding:0 0 16px;border-bottom:1px solid #0A1626">2028</th><th style="text-align:right;font-weight:500;padding:0 0 16px;border-bottom:1px solid #0A1626">2029</th></tr></thead>
+<tbody>
+<tr><td style="padding:10px 0;border-bottom:1px solid #C5C6CD">Paying clients · 付費客戶</td><td style="text-align:right;border-bottom:1px solid #C5C6CD">15</td><td style="text-align:right;border-bottom:1px solid #C5C6CD">38</td><td style="text-align:right;border-bottom:1px solid #C5C6CD">68</td><td style="text-align:right;border-bottom:1px solid #C5C6CD">150</td></tr>
+<tr><td style="padding:10px 0;border-bottom:1px solid #C5C6CD">Revenue · 收入</td><td style="text-align:right;border-bottom:1px solid #C5C6CD">0.30</td><td style="text-align:right;border-bottom:1px solid #C5C6CD">0.95</td><td style="text-align:right;border-bottom:1px solid #C5C6CD">2.10</td><td style="text-align:right;border-bottom:1px solid #C5C6CD">5.00</td></tr>
+<tr style="background:rgba(168,139,82,.08)"><td style="padding:10px 0 10px 12px;border-bottom:1px solid #C5C6CD;font-weight:500">Exit ARR · 期末年化收入</td><td style="text-align:right;border-bottom:1px solid #C5C6CD;font-weight:500">0.30</td><td style="text-align:right;border-bottom:1px solid #C5C6CD;font-weight:500">1.10</td><td style="text-align:right;border-bottom:1px solid #C5C6CD;font-weight:500;color:#785F2A">2.20</td><td style="text-align:right;border-bottom:1px solid #C5C6CD;font-weight:500;padding-right:12px">6.00</td></tr>
+<tr><td style="padding:10px 0;border-bottom:1px solid #C5C6CD">Gross margin · 毛利率</td><td style="text-align:right;border-bottom:1px solid #C5C6CD">70%</td><td style="text-align:right;border-bottom:1px solid #C5C6CD">68%</td><td style="text-align:right;border-bottom:1px solid #C5C6CD">70%</td><td style="text-align:right;border-bottom:1px solid #C5C6CD">72%</td></tr>
+<tr><td style="padding:10px 0;border-bottom:1px solid #C5C6CD">Operating expenses · 營運費用</td><td style="text-align:right;border-bottom:1px solid #C5C6CD;color:#75777D">—</td><td style="text-align:right;border-bottom:1px solid #C5C6CD">1.20</td><td style="text-align:right;border-bottom:1px solid #C5C6CD">1.85</td><td style="text-align:right;border-bottom:1px solid #C5C6CD">4.40</td></tr>
+<tr><td style="padding:10px 0;border-bottom:1px solid #C5C6CD">Net result · 淨結果</td><td style="text-align:right;border-bottom:1px solid #C5C6CD;color:#75777D">—</td><td style="text-align:right;border-bottom:1px solid #C5C6CD">−0.55</td><td style="text-align:right;border-bottom:1px solid #C5C6CD">−0.38</td><td style="text-align:right;border-bottom:1px solid #C5C6CD">−0.80</td></tr>
+<tr><td style="padding:10px 0;border-bottom:1px solid #C5C6CD">Burn multiple · 燒錢倍數</td><td style="text-align:right;border-bottom:1px solid #C5C6CD;color:#75777D">—</td><td style="text-align:right;border-bottom:1px solid #C5C6CD">0.7x</td><td style="text-align:right;border-bottom:1px solid #C5C6CD">0.3x</td><td style="text-align:right;border-bottom:1px solid #C5C6CD">0.2x</td></tr>
+</tbody></table>
+<sc-if value="{{ en }}" hint-placeholder-val="{{ true }}"><p style="margin:auto 0 0;font-size:24px;line-height:1.5;color:#75777D">Drivers: half of diagnoses convert to coaching; 40% of coaching clients adopt tools; data line 2 / 5 / 10 projects at ~US$75K; 10% annual churn. 2029 follows the Series A.</p></sc-if>
+<sc-if value="{{ zh }}" hint-placeholder-val="{{ false }}"><p style="margin:auto 0 0;font-size:24px;line-height:1.6;color:#75777D">驅動假設：一半診斷轉為陪跑；40% 陪跑客戶採用工具；數據線 2 / 5 / 10 個項目，平均約 7.5 萬美元；年流失 10%。2029 年為 A 輪之後。</p></sc-if>
+</section>
+<section data-label="Benchmarks" data-screen-label="12 Benchmarks" style="background:#FFFFFF;color:#0A1626;font-family:Manrope,'Noto Sans TC',sans-serif;padding:100px 120px;box-sizing:border-box;display:flex;flex-direction:column">
+<sc-if value="{{ en }}" hint-placeholder-val="{{ true }}"><p style="margin:0 0 28px;font-size:26px;letter-spacing:0.3em;text-transform:uppercase;color:#44474C">10 — Benchmarks</p>
+<h2 style="margin:0 0 48px;font-size:72px;font-weight:300;line-height:1.05;letter-spacing:-0.03em">Ahead of benchmark on every metric but one</h2></sc-if>
+<sc-if value="{{ zh }}" hint-placeholder-val="{{ false }}"><p style="margin:0 0 28px;font-size:28px;color:#44474C">10 — 基準對照</p>
+<h2 style="margin:0 0 48px;font-size:68px;font-weight:300;line-height:1.25;letter-spacing:-0.01em">除一項外，每項指標都優於基準</h2></sc-if>
+<div style="display:grid;grid-template-columns:1fr 300px 300px;font-size:30px">
+<span style="font-size:24px;letter-spacing:0.1em;color:#44474C;padding-bottom:14px;border-bottom:1px solid #0A1626">METRIC · 指標</span><span style="font-size:24px;letter-spacing:0.1em;color:#44474C;padding-bottom:14px;border-bottom:1px solid #0A1626;text-align:right">TABLE AI</span><span style="font-size:24px;letter-spacing:0.1em;color:#44474C;padding-bottom:14px;border-bottom:1px solid #0A1626;text-align:right">BENCHMARK · 基準</span>
+<span style="padding:20px 0;border-bottom:1px solid #C5C6CD">Growth 2027 / 2028 · 增長</span><span style="padding:20px 0;border-bottom:1px solid #C5C6CD;text-align:right">200% / 120%</span><span style="padding:20px 0;border-bottom:1px solid #C5C6CD;text-align:right;color:#44474C">170% / 85%</span>
+<span style="padding:20px 0;border-bottom:1px solid #C5C6CD">Revenue per employee, M24 · 每人收入</span><span style="padding:20px 0;border-bottom:1px solid #C5C6CD;text-align:right">$157K</span><span style="padding:20px 0;border-bottom:1px solid #C5C6CD;text-align:right;color:#44474C">$136K</span>
+<span style="padding:20px 0;border-bottom:1px solid #C5C6CD">Burn multiple · 燒錢倍數</span><span style="padding:20px 0;border-bottom:1px solid #C5C6CD;text-align:right">0.2–0.7x</span><span style="padding:20px 0;border-bottom:1px solid #C5C6CD;text-align:right;color:#44474C">&lt;1x excellent</span>
+<span style="padding:20px 0;border-bottom:1px solid #C5C6CD">Gross margin · 毛利率</span><span style="padding:20px 0;border-bottom:1px solid #C5C6CD;text-align:right">68–72%</span><span style="padding:20px 0;border-bottom:1px solid #C5C6CD;text-align:right;color:#44474C">60%</span>
+<span style="padding:20px 0 20px 12px;border-bottom:1px solid #C5C6CD;background:rgba(168,139,82,.08)">ARR at Series A · A 輪時 ARR</span><span style="padding:20px 0;border-bottom:1px solid #C5C6CD;text-align:right;background:rgba(168,139,82,.08);color:#785F2A">$2.2M</span><span style="padding:20px 12px 20px 0;border-bottom:1px solid #C5C6CD;text-align:right;color:#44474C;background:rgba(168,139,82,.08)">$2.8M (US)</span>
+</div>
+<sc-if value="{{ en }}" hint-placeholder-val="{{ true }}"><p style="margin:32px 0 0;font-size:28px;line-height:1.5">So we raise the A in Hong Kong / Southeast Asia, where the median is US$4–5M at ~US$20M pre-money.</p>
+<p style="margin:auto 0 0;font-size:24px;color:#75777D">High Alpha 2025 (AI-native, &lt;US$5M ARR) · Bessemer State of AI 2025 · Carta, Jan 2026 · Cento Ventures</p></sc-if>
+<sc-if value="{{ zh }}" hint-placeholder-val="{{ false }}"><p style="margin:32px 0 0;font-size:28px;line-height:1.6">因此 A 輪在香港或東南亞完成：當地中位數 400–500 萬美元、投前約 2,000 萬。</p>
+<p style="margin:auto 0 0;font-size:24px;color:#75777D">High Alpha 2025（AI 原生，ARR 低於 500 萬美元）· Bessemer State of AI 2025 · Carta，2026 年 1 月 · Cento Ventures</p></sc-if>
+</section>
+<section data-label="Scenarios" data-screen-label="13 Scenarios" style="background:#FFFFFF;color:#0A1626;font-family:Manrope,'Noto Sans TC',sans-serif;padding:100px 120px;box-sizing:border-box;display:flex;flex-direction:column">
+<sc-if value="{{ en }}" hint-placeholder-val="{{ true }}"><p style="margin:0 0 28px;font-size:26px;letter-spacing:0.3em;text-transform:uppercase;color:#44474C">11 — Scenarios</p>
+<h2 style="margin:0 0 72px;font-size:76px;font-weight:300;line-height:1.05;letter-spacing:-0.03em">The company doesn't need the upside to survive</h2></sc-if>
+<sc-if value="{{ zh }}" hint-placeholder-val="{{ false }}"><p style="margin:0 0 28px;font-size:28px;color:#44474C">11 — 情境</p>
+<h2 style="margin:0 0 72px;font-size:72px;font-weight:300;line-height:1.25;letter-spacing:-0.01em">公司不需要上行情境才能存活</h2></sc-if>
+<div style="display:grid;grid-template-columns:repeat(3,1fr);gap:40px;flex:1">
+<div style="border-top:1px solid #0A1626;padding-top:36px"><sc-if value="{{ en }}" hint-placeholder-val="{{ true }}"><p style="margin:0 0 20px;font-size:26px;letter-spacing:0.15em;text-transform:uppercase;color:#44474C">Downside</p></sc-if><sc-if value="{{ zh }}" hint-placeholder-val="{{ false }}"><p style="margin:0 0 20px;font-size:28px;color:#44474C">下行</p></sc-if><div style="font-size:96px;font-weight:300;letter-spacing:-0.04em;line-height:1">$1.5M</div><sc-if value="{{ en }}" hint-placeholder-val="{{ true }}"><p style="margin:24px 0 0;font-size:28px;line-height:1.5;color:#44474C">2028 revenue; exit ARR $1.6M. Half the tool conversion; data line lands one client. Seed lasts to Q3 2028; A slips 2–3 quarters, or run on revenue at 68% margin.</p></sc-if><sc-if value="{{ zh }}" hint-placeholder-val="{{ false }}"><p style="margin:24px 0 0;font-size:28px;line-height:1.65;color:#44474C">2028 年收入；期末 ARR 160 萬。工具轉化率減半、數據線只落地一家。種子資金支撐至 2028 年第三季，A 輪延後兩至三季，或以 68% 毛利靠收入自我維持。</p></sc-if></div>
+<div style="border-top:2px solid #A88B52;padding-top:35px"><sc-if value="{{ en }}" hint-placeholder-val="{{ true }}"><p style="margin:0 0 20px;font-size:26px;letter-spacing:0.15em;text-transform:uppercase;color:#785F2A">Base</p></sc-if><sc-if value="{{ zh }}" hint-placeholder-val="{{ false }}"><p style="margin:0 0 20px;font-size:28px;color:#785F2A">基準</p></sc-if><div style="font-size:96px;font-weight:300;letter-spacing:-0.04em;line-height:1">$2.1M</div><sc-if value="{{ en }}" hint-placeholder-val="{{ true }}"><p style="margin:24px 0 0;font-size:28px;line-height:1.5;color:#44474C">2028 revenue; exit ARR $2.2M, 68 clients. Series A in H2 2028.</p></sc-if><sc-if value="{{ zh }}" hint-placeholder-val="{{ false }}"><p style="margin:24px 0 0;font-size:28px;line-height:1.65;color:#44474C">2028 年收入；期末 ARR 220 萬、68 家客戶。2028 年下半年 A 輪。</p></sc-if></div>
+<div style="border-top:1px solid #0A1626;padding-top:36px"><sc-if value="{{ en }}" hint-placeholder-val="{{ true }}"><p style="margin:0 0 20px;font-size:26px;letter-spacing:0.15em;text-transform:uppercase;color:#44474C">Upside</p></sc-if><sc-if value="{{ zh }}" hint-placeholder-val="{{ false }}"><p style="margin:0 0 20px;font-size:28px;color:#44474C">上行</p></sc-if><div style="font-size:96px;font-weight:300;letter-spacing:-0.04em;line-height:1">$2.6M</div><sc-if value="{{ en }}" hint-placeholder-val="{{ true }}"><p style="margin:24px 0 0;font-size:28px;line-height:1.5;color:#44474C">2028 revenue. 60% tool adoption; two bank-IT data clients.</p></sc-if><sc-if value="{{ zh }}" hint-placeholder-val="{{ false }}"><p style="margin:24px 0 0;font-size:28px;line-height:1.65;color:#44474C">2028 年收入。工具採用率 60%；兩家銀行 IT 商數據客戶。</p></sc-if></div>
+</div>
+</section>
+<section data-label="Team" data-screen-label="14 Team" style="background:#FFFFFF;color:#0A1626;font-family:Manrope,'Noto Sans TC',sans-serif;padding:100px 120px;box-sizing:border-box;display:flex;flex-direction:column">
+<sc-if value="{{ en }}" hint-placeholder-val="{{ true }}"><p style="margin:0 0 28px;font-size:26px;letter-spacing:0.3em;text-transform:uppercase;color:#44474C">12 — Team</p>
+<h2 style="margin:0 0 56px;font-size:72px;font-weight:300;line-height:1.05;letter-spacing:-0.03em">Each wedge is led by someone who has done the job</h2>
+<div style="display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:#C5C6CD;border:1px solid #C5C6CD">
+<div style="background:#FFFFFF;padding:36px"><h3 style="margin:0 0 6px;font-size:36px;font-weight:500">Guo Feng 郭峰</h3><p style="margin:0 0 16px;font-size:24px;letter-spacing:0.1em;text-transform:uppercase;color:#785F2A">Chairman · Hotels</p><p style="margin:0;font-size:26px;line-height:1.5;color:#44474C">Built EHL Group's China business from zero, 2015–25. 130+ hotel asset cases. Founder, OPC Global.</p></div>
+<div style="background:#FFFFFF;padding:36px"><h3 style="margin:0 0 6px;font-size:36px;font-weight:500">Bian Jiang 邊江</h3><p style="margin:0 0 16px;font-size:24px;letter-spacing:0.1em;text-transform:uppercase;color:#785F2A">Restaurants</p><p style="margin:0;font-size:26px;line-height:1.5;color:#44474C">~30 years in operations. Ex-Haidilao senior brand director. Studio served 100+ brands.</p></div>
+<div style="background:#FFFFFF;padding:36px"><h3 style="margin:0 0 6px;font-size:36px;font-weight:500">Zhou Jian 周健</h3><p style="margin:0 0 16px;font-size:24px;letter-spacing:0.1em;text-transform:uppercase;color:#785F2A">Expert network</p><p style="margin:0;font-size:26px;line-height:1.5;color:#44474C">Recruits and vets the 50+ experts; runs OPC Global's one-person-company model.</p></div>
+<div style="background:#FFFFFF;padding:36px"><h3 style="margin:0 0 6px;font-size:36px;font-weight:500">Li Qikun 李奇錕</h3><p style="margin:0 0 16px;font-size:24px;letter-spacing:0.1em;text-transform:uppercase;color:#785F2A">Capital · Owners</p><p style="margin:0;font-size:26px;line-height:1.5;color:#44474C">Leads fundraising and investor relations. Runs the Table AI Golf Club owner network.</p></div>
+</div>
+<p style="margin:48px 0 20px;font-size:26px;letter-spacing:0.3em;text-transform:uppercase;color:#44474C">Advisors</p>
+<div style="display:grid;grid-template-columns:repeat(3,1fr);gap:40px;font-size:28px;line-height:1.45">
+<p style="margin:0;border-top:1px solid #0A1626;padding-top:20px">Founder of China's first Nasdaq-listed software company</p>
+<p style="margin:0;border-top:1px solid #0A1626;padding-top:20px">Top-tier China VC managing director; 16 IPO / M&amp;A exits</p>
+<p style="margin:0;border-top:1px solid #0A1626;padding-top:20px">Greater Bay Area banker; former founding branch president at a major HK bank</p>
+</div></sc-if>
+<sc-if value="{{ zh }}" hint-placeholder-val="{{ false }}"><p style="margin:0 0 28px;font-size:28px;color:#44474C">12 — 團隊</p>
+<h2 style="margin:0 0 56px;font-size:68px;font-weight:300;line-height:1.25;letter-spacing:-0.01em">每個楔子都由做過這份工作的人帶領</h2>
+<div style="display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:#C5C6CD;border:1px solid #C5C6CD">
+<div style="background:#FFFFFF;padding:36px"><h3 style="margin:0 0 8px;font-size:38px;font-weight:500">郭峰</h3><p style="margin:0 0 16px;font-size:26px;color:#785F2A">董事長 · 酒店</p><p style="margin:0;font-size:26px;line-height:1.6;color:#44474C">2015–2025 年從 0 到 1 搭建 EHL 集團中國業務；130+ 酒店資產項目；OPC Global 創始人。</p></div>
+<div style="background:#FFFFFF;padding:36px"><h3 style="margin:0 0 8px;font-size:38px;font-weight:500">邊江</h3><p style="margin:0 0 16px;font-size:26px;color:#785F2A">餐飲</p><p style="margin:0;font-size:26px;line-height:1.6;color:#44474C">約 30 年餐飲運營；前海底撈高級品牌總監；工作室服務 100+ 品牌。</p></div>
+<div style="background:#FFFFFF;padding:36px"><h3 style="margin:0 0 8px;font-size:38px;font-weight:500">周健</h3><p style="margin:0 0 16px;font-size:26px;color:#785F2A">專家網絡</p><p style="margin:0;font-size:26px;line-height:1.6;color:#44474C">負責 50+ 位專家的招募與審核，運營 OPC Global 一人公司機制。</p></div>
+<div style="background:#FFFFFF;padding:36px"><h3 style="margin:0 0 8px;font-size:38px;font-weight:500">李奇錕</h3><p style="margin:0 0 16px;font-size:26px;color:#785F2A">資本 · 企業主網絡</p><p style="margin:0;font-size:26px;line-height:1.6;color:#44474C">負責融資與投資人關係；主理 Table AI 高爾夫俱樂部企業主網絡。</p></div>
+</div>
+<p style="margin:48px 0 20px;font-size:28px;color:#44474C">顧問</p>
+<div style="display:grid;grid-template-columns:repeat(3,1fr);gap:40px;font-size:28px;line-height:1.6">
+<p style="margin:0;border-top:1px solid #0A1626;padding-top:20px">中國首家納斯達克上市軟件企業創始人</p>
+<p style="margin:0;border-top:1px solid #0A1626;padding-top:20px">頭部創投機構執行總經理；16 家 IPO 或併購退出</p>
+<p style="margin:0;border-top:1px solid #0A1626;padding-top:20px">大灣區金融家；曾任大型港資銀行分行首任行長</p>
+</div></sc-if>
+</section>
+<section data-label="The ask" data-screen-label="15 The ask" style="background:#0A1626;color:#FFFFFF;font-family:Manrope,'Noto Sans TC',sans-serif;padding:100px 120px;box-sizing:border-box;display:grid;grid-template-columns:7fr 5fr;gap:96px;align-items:center">
+<div>
+<sc-if value="{{ en }}" hint-placeholder-val="{{ true }}"><p style="margin:0 0 28px;font-size:26px;letter-spacing:0.3em;text-transform:uppercase;color:#BBC7DD">13 — The ask</p></sc-if><sc-if value="{{ zh }}" hint-placeholder-val="{{ false }}"><p style="margin:0 0 28px;font-size:28px;color:#BBC7DD">13 — 本輪融資</p></sc-if>
+<div style="font-size:240px;font-weight:300;letter-spacing:-0.05em;line-height:0.9">US$1M</div>
+<sc-if value="{{ en }}" hint-placeholder-val="{{ true }}"><p style="margin:32px 0 48px;font-size:34px;font-weight:300;color:#BBC7DD">Post-money SAFE or convertible note</p></sc-if><sc-if value="{{ zh }}" hint-placeholder-val="{{ false }}"><p style="margin:32px 0 48px;font-size:34px;font-weight:300;color:#BBC7DD">後置估值 SAFE 或可換股票據</p></sc-if>
+<div style="display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:#3C4759;border:1px solid #3C4759">
+<div style="background:#0A1626;padding:28px 32px"><sc-if value="{{ en }}" hint-placeholder-val="{{ true }}"><p style="margin:0 0 8px;font-size:24px;letter-spacing:0.12em;text-transform:uppercase;color:#BBC7DD">Cap</p></sc-if><sc-if value="{{ zh }}" hint-placeholder-val="{{ false }}"><p style="margin:0 0 8px;font-size:26px;color:#BBC7DD">估值上限</p></sc-if><span style="font-size:40px;font-weight:300;color:#E3C284;white-space:nowrap">US$10–12M</span></div>
+<div style="background:#0A1626;padding:28px 32px"><sc-if value="{{ en }}" hint-placeholder-val="{{ true }}"><p style="margin:0 0 8px;font-size:24px;letter-spacing:0.12em;text-transform:uppercase;color:#BBC7DD">Dilution</p></sc-if><sc-if value="{{ zh }}" hint-placeholder-val="{{ false }}"><p style="margin:0 0 8px;font-size:26px;color:#BBC7DD">稀釋</p></sc-if><span style="font-size:40px;font-weight:300">8–10%</span></div>
+<div style="background:#0A1626;padding:28px 32px"><sc-if value="{{ en }}" hint-placeholder-val="{{ true }}"><p style="margin:0 0 8px;font-size:24px;letter-spacing:0.12em;text-transform:uppercase;color:#BBC7DD">Discount</p></sc-if><sc-if value="{{ zh }}" hint-placeholder-val="{{ false }}"><p style="margin:0 0 8px;font-size:26px;color:#BBC7DD">折扣</p></sc-if><span style="font-size:40px;font-weight:300">15–20%</span></div>
+</div>
+<sc-if value="{{ en }}" hint-placeholder-val="{{ true }}"><p style="margin:32px 0 0;font-size:28px;color:#BBC7DD">24-month runway at US$42K a month; ~30 months with HK and Swiss grants.</p></sc-if><sc-if value="{{ zh }}" hint-placeholder-val="{{ false }}"><p style="margin:32px 0 0;font-size:28px;color:#BBC7DD">月均燒錢 4.2 萬美元，跑道 24 個月；計入港瑞資助約 30 個月。</p></sc-if>
+</div>
+<div>
+<sc-if value="{{ en }}" hint-placeholder-val="{{ true }}"><p style="margin:0 0 24px;font-size:26px;letter-spacing:0.3em;text-transform:uppercase;color:#BBC7DD">This money must deliver</p>
+<div style="display:flex;flex-direction:column;border-top:1px solid #3C4759;font-size:32px">
+<div style="padding:24px 0;border-bottom:1px solid #3C4759">~70 paying clients</div>
+<div style="padding:24px 0;border-bottom:1px solid #3C4759;color:#E3C284">US$2.2M ARR</div>
+<div style="padding:24px 0;border-bottom:1px solid #3C4759">Product v1 live with clients</div>
+<div style="padding:24px 0;border-bottom:1px solid #3C4759">Rule bases in three industries</div>
+<div style="padding:24px 0;border-bottom:1px solid #3C4759">HK and Swiss entities operating</div>
+</div></sc-if>
+<sc-if value="{{ zh }}" hint-placeholder-val="{{ false }}"><p style="margin:0 0 24px;font-size:28px;color:#BBC7DD">這筆錢必須達成</p>
+<div style="display:flex;flex-direction:column;border-top:1px solid #3C4759;font-size:32px">
+<div style="padding:24px 0;border-bottom:1px solid #3C4759">約 70 家付費客戶</div>
+<div style="padding:24px 0;border-bottom:1px solid #3C4759;color:#E3C284">220 萬美元 ARR</div>
+<div style="padding:24px 0;border-bottom:1px solid #3C4759">產品 v1 在客戶端上線</div>
+<div style="padding:24px 0;border-bottom:1px solid #3C4759">三個行業的規則庫</div>
+<div style="padding:24px 0;border-bottom:1px solid #3C4759">香港與瑞士兩個實體運作</div>
+</div></sc-if>
+</div>
+</section>
+<section data-label="Funds & Series A" data-screen-label="16 Funds & Series A" style="background:#FFFFFF;color:#0A1626;font-family:Manrope,'Noto Sans TC',sans-serif;padding:100px 120px;box-sizing:border-box;display:flex;flex-direction:column">
+<sc-if value="{{ en }}" hint-placeholder-val="{{ true }}"><p style="margin:0 0 28px;font-size:26px;letter-spacing:0.3em;text-transform:uppercase;color:#44474C">14 — Use of funds &amp; return path</p>
+<h2 style="margin:0 0 64px;font-size:72px;font-weight:300;line-height:1.05;letter-spacing:-0.03em">The cap is ~5× month-24 ARR; the A prices at 2–3× the cap</h2></sc-if>
+<sc-if value="{{ zh }}" hint-placeholder-val="{{ false }}"><p style="margin:0 0 28px;font-size:28px;color:#44474C">14 — 資金用途與回報路徑</p>
+<h2 style="margin:0 0 64px;font-size:68px;font-weight:300;line-height:1.25;letter-spacing:-0.01em">估值上限約為第 24 個月 ARR 的 5 倍；A 輪估值為上限的 2–3 倍</h2></sc-if>
+<div style="display:grid;grid-template-columns:7fr 5fr;gap:96px;flex:1">
+<div style="display:grid;grid-template-columns:320px 1fr 100px;column-gap:32px;row-gap:36px;align-items:center;align-content:start;font-size:30px">
+<sc-if value="{{ en }}" hint-placeholder-val="{{ true }}"><span>Product &amp; engineering</span></sc-if><sc-if value="{{ zh }}" hint-placeholder-val="{{ false }}"><span>產品與工程</span></sc-if><div style="height:22px;background:#F5F3F4"><div style="width:100%;height:100%;background:#0A1626"></div></div><span style="text-align:right">40%</span>
+<sc-if value="{{ en }}" hint-placeholder-val="{{ true }}"><span>Expert network</span></sc-if><sc-if value="{{ zh }}" hint-placeholder-val="{{ false }}"><span>專家網絡</span></sc-if><div style="height:22px;background:#F5F3F4"><div style="width:62.5%;height:100%;background:#0A1626"></div></div><span style="text-align:right">25%</span>
+<sc-if value="{{ en }}" hint-placeholder-val="{{ true }}"><span>Brand &amp; sales</span></sc-if><sc-if value="{{ zh }}" hint-placeholder-val="{{ false }}"><span>品牌與銷售</span></sc-if><div style="height:22px;background:#F5F3F4"><div style="width:50%;height:100%;background:#0A1626"></div></div><span style="text-align:right">20%</span>
+<sc-if value="{{ en }}" hint-placeholder-val="{{ true }}"><span>Swiss entity</span></sc-if><sc-if value="{{ zh }}" hint-placeholder-val="{{ false }}"><span>瑞士實體</span></sc-if><div style="height:22px;background:#F5F3F4"><div style="width:25%;height:100%;background:#0A1626"></div></div><span style="text-align:right">10%</span>
+<sc-if value="{{ en }}" hint-placeholder-val="{{ true }}"><span>Reserve</span></sc-if><sc-if value="{{ zh }}" hint-placeholder-val="{{ false }}"><span>儲備</span></sc-if><div style="height:22px;background:#F5F3F4"><div style="width:12.5%;height:100%;background:#0A1626"></div></div><span style="text-align:right">5%</span>
+</div>
+<div style="display:flex;flex-direction:column;gap:1px;background:#C5C6CD;border:1px solid #C5C6CD;align-self:start">
+<div style="background:#FFFFFF;padding:36px 40px"><sc-if value="{{ en }}" hint-placeholder-val="{{ true }}"><p style="margin:0 0 10px;font-size:24px;letter-spacing:0.12em;text-transform:uppercase;color:#44474C">Series A · H2 2028</p></sc-if><sc-if value="{{ zh }}" hint-placeholder-val="{{ false }}"><p style="margin:0 0 10px;font-size:26px;color:#44474C">A 輪 · 2028 年下半年</p></sc-if><div style="font-size:56px;font-weight:300;letter-spacing:-0.03em">$4–6M at $20–30M pre</div></div>
+<div style="background:#FFFFFF;padding:36px 40px"><sc-if value="{{ en }}" hint-placeholder-val="{{ true }}"><p style="margin:0 0 10px;font-size:24px;letter-spacing:0.12em;text-transform:uppercase;color:#44474C">Seed step-up to A</p></sc-if><sc-if value="{{ zh }}" hint-placeholder-val="{{ false }}"><p style="margin:0 0 10px;font-size:26px;color:#44474C">種子到 A 輪升幅</p></sc-if><div style="font-size:56px;font-weight:300;letter-spacing:-0.03em;color:#785F2A">2–3× <span style="font-size:32px;color:#44474C">SEA</span> · 4–5× <span style="font-size:32px;color:#44474C">US</span></div></div>
+</div>
+</div>
+<p style="margin:auto 0 0;font-size:24px;color:#75777D">Cento Ventures SEA 2024 · Carta State of Seed · Tanner De Witt (HK SAFE practice)</p>
+</section>
+<section data-label="FAQ" data-screen-label="17 FAQ" style="background:#FFFFFF;color:#0A1626;font-family:Manrope,'Noto Sans TC',sans-serif;padding:100px 120px;box-sizing:border-box;display:flex;flex-direction:column">
+<sc-if value="{{ en }}" hint-placeholder-val="{{ true }}"><p style="margin:0 0 28px;font-size:26px;letter-spacing:0.3em;text-transform:uppercase;color:#44474C">15 — Hard questions</p>
+<h2 style="margin:0 0 56px;font-size:72px;font-weight:300;line-height:1.05;letter-spacing:-0.03em">What investors ask, answered</h2>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:48px 72px">
+<div style="border-top:1px solid #0A1626;padding-top:24px"><h3 style="margin:0 0 12px;font-size:32px;font-weight:500">Isn't this consulting with an AI label?</h3><p style="margin:0;font-size:26px;line-height:1.5;color:#44474C">Today 85% of revenue is services. But our rules are written, signed, reused across clients and resold as data. Services fall to 30% by 2029.</p></div>
+<div style="border-top:1px solid #0A1626;padding-top:24px"><h3 style="margin:0 0 12px;font-size:32px;font-weight:500">Why pay US$30K when SaaS costs ¥5K?</h3><p style="margin:0;font-size:26px;line-height:1.5;color:#44474C">They buy a named 30-year operator's judgement in a week. The comparison is a US$50–200K consulting project.</p></div>
+<div style="border-top:1px solid #0A1626;padding-top:24px"><h3 style="margin:0 0 12px;font-size:32px;font-weight:500">How do four founders reach 70,000 buyers?</h3><p style="margin:0;font-size:26px;line-height:1.5;color:#44474C">We don't. We reach the 70 already in our networks. The Series A funds the sales team beyond them.</p></div>
+<div style="border-top:1px solid #0A1626;padding-top:24px"><h3 style="margin:0 0 12px;font-size:32px;font-weight:500">What if the bank-IT deal doesn't sign?</h3><p style="margin:0;font-size:26px;line-height:1.5;color:#44474C">The data line falls from US$0.4M to ~US$0.1M in 2028; lines A and B still deliver US$1.8M. Two more vendors are in parallel.</p></div>
+</div>
+<p style="margin:auto 0 0;padding-top:28px;border-top:1px solid #C5C6CD;font-size:28px"><span style="color:#785F2A">What would prove us wrong:</span> owners refusing to share six months of data. Fifteen clients, including listed companies, already have.</p></sc-if>
+<sc-if value="{{ zh }}" hint-placeholder-val="{{ false }}"><p style="margin:0 0 28px;font-size:28px;color:#44474C">15 — 尖銳問題</p>
+<h2 style="margin:0 0 56px;font-size:68px;font-weight:300;line-height:1.25;letter-spacing:-0.01em">投資人會問的，直接回答</h2>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:48px 72px">
+<div style="border-top:1px solid #0A1626;padding-top:24px"><h3 style="margin:0 0 12px;font-size:32px;font-weight:500">這不就是貼著 AI 標籤的諮詢公司？</h3><p style="margin:0;font-size:26px;line-height:1.65;color:#44474C">今天 85% 收入來自服務。但我們的規則被寫下、簽名、跨客戶複用並作為數據再售；服務到 2029 年降至 30%。</p></div>
+<div style="border-top:1px solid #0A1626;padding-top:24px"><h3 style="margin:0 0 12px;font-size:32px;font-weight:500">SaaS 只要 5,000 元，為何付 3 萬美元？</h3><p style="margin:0;font-size:26px;line-height:1.65;color:#44474C">他們買的是一位具名 30 年經營者一週內交付的判斷；比較對象是 5–20 萬美元的諮詢項目。</p></div>
+<div style="border-top:1px solid #0A1626;padding-top:24px"><h3 style="margin:0 0 12px;font-size:32px;font-weight:500">四位創始人怎麼觸達 7 萬個買家？</h3><p style="margin:0;font-size:26px;line-height:1.65;color:#44474C">我們不觸達。我們只觸達已在網絡裡的 70 家；A 輪才資助走出網絡的銷售團隊。</p></div>
+<div style="border-top:1px solid #0A1626;padding-top:24px"><h3 style="margin:0 0 12px;font-size:32px;font-weight:500">銀行 IT 商不簽怎麼辦？</h3><p style="margin:0;font-size:26px;line-height:1.65;color:#44474C">數據線 2028 年由 40 萬降至約 10 萬美元；A、B 線仍達 180 萬美元收入。另兩家同步推進。</p></div>
+</div>
+<p style="margin:auto 0 0;padding-top:28px;border-top:1px solid #C5C6CD;font-size:28px"><span style="color:#785F2A">什麼會證明我們錯了：</span>企業主拒絕讓外部專家看六個月經營數據。15 家客戶，包括上市公司，已經交出了數據。</p></sc-if>
+</section>
+<section data-label="Close" data-screen-label="18 Close" style="background:#0A1626;color:#FFFFFF;font-family:Manrope,'Noto Sans TC',sans-serif;padding:100px 120px;box-sizing:border-box;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center">
+<img src="../../assets/logo/tableai-a2a-mark.svg" alt="" style="height:120px;margin-bottom:64px;filter:invert(1)">
+<sc-if value="{{ en }}" hint-placeholder-val="{{ true }}"><h2 style="margin:0;font-size:100px;font-weight:300;line-height:1.02;letter-spacing:-0.035em;max-width:1400px">Lead the seed round</h2>
+<p style="margin:40px 0 0;font-size:36px;font-weight:300;color:#BBC7DD">US$1M · US$10–12M cap · 15 clients today, ~70 in 24 months</p></sc-if>
+<sc-if value="{{ zh }}" hint-placeholder-val="{{ false }}"><h2 style="margin:0;font-size:100px;font-weight:300;line-height:1.2;letter-spacing:-0.01em;max-width:1400px">誠邀領投種子輪</h2>
+<p style="margin:40px 0 0;font-size:36px;font-weight:300;color:#BBC7DD">100 萬美元 · 上限 1,000–1,200 萬 · 現有 15 家客戶，24 個月約 70 家</p></sc-if>
+<span style="display:block;width:96px;height:1px;background:#A88B52;margin:56px auto"></span>
+<p style="margin:0;font-size:40px;font-weight:300">hi@tableai.ai · tableai.ai</p>
+</section>
+<section data-label="Appendix" data-screen-label="19 Appendix" style="background:#FFFFFF;color:#0A1626;font-family:Manrope,'Noto Sans TC',sans-serif;padding:100px 120px;box-sizing:border-box;display:grid;grid-template-columns:1fr 1fr;gap:96px">
+<div>
+<sc-if value="{{ en }}" hint-placeholder-val="{{ true }}"><p style="margin:0 0 28px;font-size:26px;letter-spacing:0.3em;text-transform:uppercase;color:#44474C">Appendix — Assumptions</p></sc-if><sc-if value="{{ zh }}" hint-placeholder-val="{{ false }}"><p style="margin:0 0 28px;font-size:28px;color:#44474C">附錄 — 測算假設</p></sc-if>
+<div style="display:flex;flex-direction:column;border-top:1px solid #0A1626;font-size:25px;line-height:1.5">
+<p style="margin:0;padding:18px 0;border-bottom:1px solid #C5C6CD"><b style="font-weight:500">Total 745K buyers</b> = 150K F&amp;B chain owners &amp; multi-store franchisees + 350K private above-scale manufacturers + 200K owners of 30+ room hotels + 43K financial service providers</p>
+<p style="margin:0;padding:18px 0;border-bottom:1px solid #C5C6CD"><b style="font-weight:500">Serviceable 70K</b> = 7.5K F&amp;B owners + 55K manufacturers + 3.5K hotel owner groups + 4K financial providers, each at ~RMB 100M–1.1B revenue</p>
+<p style="margin:0;padding:18px 0;border-bottom:1px solid #C5C6CD"><b style="font-weight:500">Counting unit</b> the buyer who signs, not outlets or properties; 55–70% of chain outlets franchised at 1.4–2.3 stores per franchisee (est.)</p>
+<p style="margin:0;padding:18px 0;border-bottom:1px solid #C5C6CD"><b style="font-weight:500">Contract value</b> US$30K average; FX US$1 = RMB 7.2 = CHF 0.80</p>
+<p style="margin:0;padding:18px 0;border-bottom:1px solid #C5C6CD"><b style="font-weight:500">Expansion</b> (HK 360K SMEs, Singapore, Switzerland) excluded from the funnel</p>
+</div>
+</div>
+<div>
+<sc-if value="{{ en }}" hint-placeholder-val="{{ true }}"><p style="margin:0 0 28px;font-size:26px;letter-spacing:0.3em;text-transform:uppercase;color:#44474C">Sources · accessed 6 Oct 2026</p></sc-if><sc-if value="{{ zh }}" hint-placeholder-val="{{ false }}"><p style="margin:0 0 28px;font-size:28px;color:#44474C">資料來源 · 2026 年 10 月 6 日查閱</p></sc-if>
+<div style="display:flex;flex-direction:column;border-top:1px solid #0A1626;font-size:25px;line-height:1.5;color:#44474C">
+<p style="margin:0;padding:18px 0;border-bottom:1px solid #C5C6CD"><span style="color:#0A1626">Manufacturing</span> · MIIT Jan &amp; Nov 2025; NBS 2026</p>
+<p style="margin:0;padding:18px 0;border-bottom:1px solid #C5C6CD"><span style="color:#0A1626">Restaurants</span> · CCFA × Meituan white paper, Apr 2026</p>
+<p style="margin:0;padding:18px 0;border-bottom:1px solid #C5C6CD"><span style="color:#0A1626">Hotels</span> · China Hotel Association, Apr 2026; TravelDaily</p>
+<p style="margin:0;padding:18px 0;border-bottom:1px solid #C5C6CD"><span style="color:#0A1626">Banking</span> · NFRA list via 21st Century, Aug 2026; IDC Jul 2025 &amp; Aug 2026</p>
+<p style="margin:0;padding:18px 0;border-bottom:1px solid #C5C6CD"><span style="color:#0A1626">Benchmarks</span> · High Alpha 2025; Bessemer State of AI 2025; Carta; Cento Ventures</p>
+<p style="margin:0;padding:18px 0;border-bottom:1px solid #C5C6CD"><span style="color:#0A1626">Pricing</span> · Keruyun, Shiji 2024 reports; Inex One</p>
+</div>
+</div>
+</section>
+</x-import>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;lang&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;en&quot;,&quot;zh&quot;],&quot;default&quot;:&quot;en&quot;,&quot;tsType&quot;:&quot;'en' | 'zh'&quot;,&quot;section&quot;:&quot;Language&quot;}}">
+class Component extends DCLogic {
+  state = { lang: null };
+  componentDidMount() {
+    this.onKey = e => {
+      if (e.key !== "l" && e.key !== "L") return;
+      if (e.target && e.target.closest && e.target.closest("input,textarea,[contenteditable]")) return;
+      this.setState(s => ({ lang: (s.lang || this.props.lang || "en") === "en" ? "zh" : "en" }));
+    };
+    window.addEventListener("keydown", this.onKey);
+  }
+  componentWillUnmount() { window.removeEventListener("keydown", this.onKey); }
+  componentDidUpdate(prev) { if (prev.lang !== this.props.lang && this.state.lang !== null) this.setState({ lang: null }); }
+  renderVals() {
+    const l = this.state.lang || this.props.lang || "en";
+    return { en: l === "en", zh: l === "zh" };
+  }
+}
+</script>
+</body>
+</html>

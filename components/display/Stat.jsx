@@ -18,7 +18,7 @@ export function Stat({ value, suffix = "", label, description, accent = false, c
   return (
     <div style={{ display: "flex", flexDirection: "column", alignItems: align === "center" ? "center" : "flex-start", textAlign: align, gap: 8, fontFamily: "var(--font-sans)", color: "var(--text)", ...style }}>
       <div style={{ fontSize: fs, fontWeight: 300, letterSpacing: "-0.03em", lineHeight: 1, color: accent ? "var(--accent-text)" : "var(--text)", fontVariantNumeric: "tabular-nums" }}>{numeric ? n.toLocaleString() : n}{suffix}</div>
-      {label ? <div style={{ fontSize: 12, letterSpacing: "0.15em", textTransform: "uppercase", color: "var(--text-muted)" }}>{label}</div> : null}
+      {label ? <div style={{ fontSize: 12, letterSpacing: "var(--ls-track-md)", textTransform: "uppercase", color: "var(--text-muted)" }}>{label}</div> : null}
       {description ? <p style={{ margin: 0, fontSize: 12, lineHeight: 1.6, color: "var(--text-subtle)", maxWidth: 280 }}>{description}</p> : null}
     </div>
   );

@@ -1,6 +1,6 @@
 ---
 name: tableai-design
-description: Use this skill to generate well-branded interfaces and assets for TABLE AI (Agent-to-Agent alliance, international think tank), either for production or throwaway prototypes/mocks/etc. Contains essential design guidelines, colors, type, fonts, assets, and UI kit components for prototyping.
+description: Use this skill to generate well-branded interfaces and assets for TABLE AI (Expert-AI Studio; Agent-to-Agent alliance), either for production or throwaway prototypes/mocks/etc. Contains essential design guidelines, colors, type, fonts, assets, and UI kit components for prototyping.
 user-invocable: true
 ---
 
@@ -10,7 +10,8 @@ If the user invokes this skill without any other guidance, ask them what they wa
 
 Quick rules (details in readme.md):
 - White ground. Universe Deep Blue `#0A1626` for text and structure. Sundial Dark Gold `#A88B52` only for the one conversion action, active states and a single key figure — never more than ~8% of what is visible.
-- Manrope everywhere (Noto Sans SC for 中文). Big type is light (300) and tight (−0.03em); labels are 12px uppercase tracked 0.3em.
+- Manrope everywhere (Noto Sans TC for 繁體中文). Big type is light (300) and tight (−0.03em); labels are 12px uppercase tracked 0.3em.
 - Hairlines, not boxes: 1px `#C5C6CD` rules and 1px-gap tile grids. Square cards; 2px control radius; no shadows.
 - Motion: one easing `cubic-bezier(0.16,1,0.3,1)`; reveal = fade + rise + de-blur; hover lifts 2–4px; press scales 0.98.
 - Icons: Lucide stroke set in `assets/icons/lucide/` via the `Icon` component. No emoji, no filled icons.
+- Copy: Traditional Chinese (Hong Kong usage, 「」 quotes) + English. Lead with the Expert-AI Studio story (Expert Agent · Expert Data & Rubrics · Expert Evals), then the alliance/AHA/1+1+X material. No client names or prices — this is a brand system, not a proposal.

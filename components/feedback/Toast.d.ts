@@ -1,6 +1,6 @@
-/** Transient notice; success uses a gold check, error a red alert glyph. */
+/** Transient notice; leading glyph tinted by tone (success pine, warning ochre, error red). */
 export interface ToastProps {
-  variant?: "info" | "success" | "error" | "loading";
+  variant?: "info" | "success" | "warning" | "error" | "loading";
   title?: React.ReactNode;
   description?: React.ReactNode;
   action?: React.ReactNode;

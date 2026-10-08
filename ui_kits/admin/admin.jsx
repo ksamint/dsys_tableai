@@ -1,15 +1,15 @@
-const DS = window.TABLEAIDesignSystem_6a9d5e;
+const DS = window.TableAIDesignSystem_f48f27;
 const { Button, IconButton, Input, Select, Switch, Card, Badge, Tag, Eyebrow, Tabs, Dialog, ConfirmDialog, Toast, ToastStack, Tooltip, Icon, Skeleton, Divider } = DS;
 
 /* ── Data: cms_content / locations / partners rows (drizzle schema, seeded from server/seed.ts) ── */
 const CONTENT = [
-  ["hero", "TABLE AI", "TABLE AI", 0, true], ["hero_vision", "核心洞察与企业使命", "Our Vision & Mission", 1, true], ["hero_mission", "我们的使命", "Our Mission", 2, true],
-  ["home_stats", "首页统计", "Home Stats", 3, true], ["aha_architecture", "底层协作架构：AHA 体系", "The AHA Architecture", 5, true], ["business_overview", "商业部署矩阵", "Business Deployment Matrix", 10, true],
-  ["protocol", "第一个「1」：跨越“信任”临界点", "The First '1': Crossing the Trust Threshold", 20, true], ["protocol_aha_visual", "AHA 体系 —— 智能体-人-资产", "AHA Architecture — Agent-Human-Assets", 21, true],
-  ["network", "第二个「1」：跨越“体验”临界点", "The Second '1': Crossing the Experience Threshold", 30, true], ["network_hubs", "全球布局", "Global Presence", 31, true],
-  ["showroom_overview", "乘数「X」：引领范式转移", "The Multiplier 'X': Leading Paradigm Shift", 40, true], ["showroom_x1", "合规商旅与供应链管家", "Compliant Business Travel & Supply Chain Steward", 41, true],
-  ["showroom_x2", "空间资产智能化调度平台", "Intelligent Space Asset Scheduling Platform", 42, true], ["showroom_x3", "高端服务与科研成果转化系统", "Premium Services & Research Commercialization System", 43, false],
-  ["about", "关于 TABLE AI", "About TABLE AI", 50, true], ["footer", "TABLE AI", "TABLE AI", 100, true],
+  ["hero", "TABLE AI", "TABLE AI", 0, true], ["hero_vision", "核心洞察與企業使命", "Our Vision & Mission", 1, true], ["hero_mission", "我們的使命", "Our Mission", 2, true],
+  ["home_stats", "首頁統計", "Home Stats", 3, true], ["aha_architecture", "底層協作架構：AHA 體系", "The AHA Architecture", 5, true], ["business_overview", "商業部署矩陣", "Business Deployment Matrix", 10, true],
+  ["protocol", "第一個「1」：跨越「信任」臨界點", "The First '1': Crossing the Trust Threshold", 20, true], ["protocol_aha_visual", "AHA 體系 —— 智能體-人-資產", "AHA Architecture — Agent-Human-Assets", 21, true],
+  ["network", "第二個「1」：跨越「體驗」臨界點", "The Second '1': Crossing the Experience Threshold", 30, true], ["network_hubs", "全球布局", "Global Presence", 31, true],
+  ["showroom_overview", "乘數「X」：引領範式轉移", "The Multiplier 'X': Leading Paradigm Shift", 40, true], ["showroom_x1", "合規商旅與供應鏈管家", "Compliant Business Travel & Supply Chain Steward", 41, true],
+  ["showroom_x2", "空間資產智能化調度平台", "Intelligent Space Asset Scheduling Platform", 42, true], ["showroom_x3", "高端服務與科研成果轉化系統", "Premium Services & Research Commercialization System", 43, false],
+  ["about", "關於 TABLE AI", "About TABLE AI", 50, true], ["footer", "TABLE AI", "TABLE AI", 100, true],
 ].map(([key, zh, en, sort, pub]) => ({ key, zh, en, sort, pub }));
 const LOCATIONS = [["TABLE AI HQ", "Hong Kong", "Greater China", 22.3193, 114.1694], ["London Node", "London", "Europe", 51.5074, -0.1278], ["Basel Node", "Basel", "Europe", 47.5596, 7.5886], ["North America Node", "New York", "North America", 40.7128, -74.006], ["Beijing Node", "Beijing", "Greater China", 39.9042, 116.4074], ["Shanghai Node", "Shanghai", "Greater China", 31.2304, 121.4737], ["Shenzhen Node", "Shenzhen", "Greater China", 22.5431, 114.0579]].map(([name, city, region, lat, lng]) => ({ name, city, region, lat, lng }));
 const PARTNERS = [["Boyuai Education", "education"], ["Lanma Technology", "technology"], ["Beijing Chaoyang Hospital", "medical"], ["OPC Global", "alliance"], ["Nibiru (RealMax)", "technology"], ["World Canal Cities Canal Walk", "culture"], ["CIT Group", "tourism"], ["Asian Institute of Art Therapy", "research"]].map(([name, cat], i) => ({ name, cat, active: i !== 6, url: "https://" }));
@@ -33,7 +33,7 @@ function Sidebar({ page, go }) {
         <div style={{ display: "flex", alignItems: "center", gap: 12, padding: "8px 12px" }}>
           <span className="avatar">A</span>
           <span style={{ flex: 1, minWidth: 0 }}><span style={{ display: "block", fontSize: 14, fontWeight: 500 }}>Admin</span><span style={{ display: "block", fontSize: 12, color: "var(--text-muted)", overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap" }}>admin@tableai.ai</span></span>
-          <Tooltip content="Sign out" side="left"><IconButton icon="log-out" label="Sign out" size="sm" /></Tooltip>
+          <Tooltip content="Sign out" side="left"><IconButton icon="log-out" label="Sign out" size="sm" onClick={() => go("login")} /></Tooltip>
         </div>
       </div>
     </aside>
@@ -67,7 +67,7 @@ function Dashboard({ go, toast }) {
       </Card>
       <div className="grid-3" style={{ marginTop: 16 }}>
         {[["Sections", CONTENT.length, `${CONTENT.filter(c => c.pub).length} published`], ["Locations", LOCATIONS.length, "7 nodes on the map"], ["Partners", PARTNERS.length, `${PARTNERS.filter(p => p.active).length} active`]].map(([l, n, d]) => (
-          <div key={l} style={{ padding: "16px 0", borderTop: "1px solid var(--border)" }}><Eyebrow style={{ letterSpacing: ".15em" }}>{l}</Eyebrow><div style={{ fontSize: 32, fontWeight: 300, letterSpacing: "-.03em", margin: "8px 0 4px" }}>{n}</div><div style={{ fontSize: 12, color: "var(--text-muted)" }}>{d}</div></div>
+          <div key={l} style={{ padding: "16px 0", borderTop: "1px solid var(--border)" }}><Eyebrow style={{ letterSpacing: "var(--ls-track-md)" }}>{l}</Eyebrow><div style={{ fontSize: 32, fontWeight: 300, letterSpacing: "-.03em", margin: "8px 0 4px" }}>{n}</div><div style={{ fontSize: 12, color: "var(--text-muted)" }}>{d}</div></div>
         ))}
       </div>
     </>
@@ -112,7 +112,7 @@ function ContentPage({ toast }) {
           <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 16, alignItems: "end" }}><Input label="Sort order" type="number" value={edit.sort} onChange={e => setEdit({ ...edit, sort: Number(e.target.value) })} /><Switch checked={edit.pub} onChange={v => setEdit({ ...edit, pub: v })} label="Published" /></div>
         </div> : null}
       </Dialog>
-      <ConfirmDialog open={!!del} danger title="Delete section?" description={del ? `“${del.key}” will disappear from the website immediately.` : ""} confirmLabel="Delete" onClose={() => setDel(null)} onConfirm={() => { setRows(rs => rs.filter(x => x.key !== del.key)); toast("info", "Deleted", del.key); setDel(null); }} />
+      <ConfirmDialog open={!!del} danger title="Delete section?" description={del ? `「${del.key}」 will disappear from the website immediately.` : ""} confirmLabel="Delete" onClose={() => setDel(null)} onConfirm={() => { setRows(rs => rs.filter(x => x.key !== del.key)); toast("info", "Deleted", del.key); setDel(null); }} />
     </>
   );
 }
@@ -148,12 +148,14 @@ function Placeholder({ title }) {
   return <><PageTitle title={title} /><div style={{ display: "flex", flexDirection: "column", gap: 12, maxWidth: 560 }}><Skeleton width={220} height={28} /><Skeleton lines={3} /><Divider spacing={8} /><Skeleton lines={2} /></div><p style={{ fontSize: 12, color: "var(--text-subtle)", marginTop: 24 }}>Not recreated — Admin{title}.tsx was not read from the source repository. Deep-blue skeleton per design.md §4.</p></>;
 }
 
+window.PageTitle = PageTitle;
 function AdminApp() {
   const [page, setPage] = React.useState(() => location.hash.replace("#", "") || "dashboard");
   const [toasts, setToasts] = React.useState([]);
   const go = p => { setPage(p); location.hash = p; };
   const toast = (variant, title, description) => { const id = Date.now(); setToasts(t => [...t, { id, variant, title, description }]); setTimeout(() => setToasts(t => t.filter(x => x.id !== id)), 3200); };
-  const Page = { dashboard: Dashboard, content: ContentPage, locations: LocationsPage, partners: PartnersPage }[page];
+  const Page = { dashboard: Dashboard, content: ContentPage, locations: LocationsPage, partners: PartnersPage, users: window.UsersPage, settings: window.SettingsPage }[page];
+  if (page === "login") return <><window.LoginPage go={go} toast={toast} /><ToastStack>{toasts.map(t => <Toast key={t.id} variant={t.variant} title={t.title} onDismiss={() => setToasts(ts => ts.filter(x => x.id !== t.id))} />)}</ToastStack></>;
   return (
     <div className="admin">
       <Sidebar page={page} go={go} />
