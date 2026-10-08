@@ -1,0 +1,20 @@
+<!-- @dsCard group="Components" viewport="700x420" name="Data — Table & Charts" subtitle="DataTable (default / compact / comparison), BarChart, DonutChart — deep-blue ramp, one gold highlight" -->
+<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="../../styles.css">
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+<script src="../../_ds_bundle.js"></script>
+<style>body{margin:0;padding:20px;background:var(--bg)}</style></head>
+<body><div id="root"></div>
+<script type="text/babel">
+const { DataTable, BarChart, DonutChart, Badge } = window.TableAIDesignSystem_f48f27;
+const cols=[{key:"name",label:"Product"},{key:"buyer",label:"Buyer",muted:true},{key:"term",label:"Term",muted:true},{key:"weeks",label:"Weeks",numeric:true},{key:"status",label:"Status",sortable:false,render:r=><Badge variant={r.ok?"success":"neutral"} dot>{r.ok?"Live":"Draft"}</Badge>}}];
+const rows=[{id:1,name:"Expert Agent",buyer:"Business units",term:"Multi-year",weeks:12,ok:true},{id:2,name:"Expert Data & Rubrics",buyer:"Model teams",term:"Annual",weeks:8,ok:true},{id:3,name:"Expert Evals",buyer:"Compliance",term:"One-off",weeks:6,ok:false}];
+function Demo(){return <div style={{display:"grid",gap:28}}>
+  <DataTable sortable variant="compact" columns={cols} rows={rows} highlightRow={0} />
+  <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:40,alignItems:"center"}}>
+    <BarChart unit="%" highlight={0} data={[{label:"Product",value:40},{label:"Experts",value:25},{label:"Market",value:20},{label:"Entity",value:10},{label:"Reserve",value:5}]} />
+    <DonutChart size={140} thickness={12} centerValue="3" centerLabel="Products" highlight={2} data={[{label:"Expert Agent",value:45},{label:"Data & Rubrics",value:35},{label:"Expert Evals",value:20}]} unit="%" />
+  </div></div>}
+ReactDOM.createRoot(document.getElementById("root")).render(<Demo/>);
+</script></body></html>

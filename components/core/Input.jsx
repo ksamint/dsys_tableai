@@ -25,7 +25,8 @@ export function FieldLabel({ label, hint, error, required, htmlFor, children, co
 export function Input({ label, hint, error, required, icon, prefix, suffix, size = "md", disabled = false, style, containerStyle, id, ...rest }) {
   const [focus, setFocus] = React.useState(false);
   const h = size === "sm" ? 32 : 40;
-  const inputId = id || (label ? "in-" + label.replace(/\W+/g, "-").toLowerCase() : undefined);
+  const autoId = React.useId();
+  const inputId = id || "in-" + autoId;
   return (
     <FieldLabel label={label} hint={hint} error={error} required={required} htmlFor={inputId} containerStyle={containerStyle}>
       <span style={{ ...fieldFrame({ focus, error, disabled }), height: h, padding: "0 12px", gap: 8, ...style }}>

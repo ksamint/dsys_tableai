@@ -4,7 +4,7 @@
  */
 export interface NavItem { href: string; label: React.ReactNode; }
 export interface NavBarProps {
-  /** e.g. "assets/logo/tableai-a2a-logo-transparent.png" */
+  /** e.g. "assets/logo/tableai-a2a-mark.svg" */
   logoSrc?: string;
   brand?: string;
   items: NavItem[];

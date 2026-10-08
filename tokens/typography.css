@@ -1,6 +1,6 @@
-/* TABLE AI — typography tokens. Manrope for display, body and UI; Noto Sans SC covers 中文. */
+/* TABLE AI — typography tokens. Manrope for display, body and UI; Noto Sans TC covers 繁體中文 (SC fallback). */
 :root{
---font-sans:"Manrope","Noto Sans SC",system-ui,-apple-system,"Segoe UI",sans-serif; /* @kind font */
+--font-sans:"Manrope","Noto Sans TC","PingFang HK","Microsoft JhengHei","Noto Sans SC",system-ui,-apple-system,"Segoe UI",sans-serif; /* @kind font */
 --font-display:var(--font-sans); /* @kind font */
 --font-mono:ui-monospace,"SF Mono",Menlo,Consolas,monospace; /* @kind font */
 /* Weights */
@@ -40,4 +40,38 @@
 --ls-eyebrow:0.3em; /* @kind other */
 --ls-eyebrow-tight:0.15em; /* @kind other */
 --ls-wordmark:0.1em; /* @kind other */
+/* Heading roles. Marketing (site, decks, documents) = light & tight; Product (admin, app UI) = semibold. */
+--type-marketing-display-size:clamp(40px,7vw,96px); /* @kind font */
+--type-marketing-display-weight:300; /* @kind other */
+--type-marketing-display-lh:0.95; /* @kind other */
+--type-marketing-display-ls:-0.03em; /* @kind other */
+--type-marketing-h1-size:clamp(32px,5vw,72px); /* @kind font */
+--type-marketing-h1-weight:300; /* @kind other */
+--type-marketing-h1-lh:1.05; /* @kind other */
+--type-marketing-h1-ls:-0.03em; /* @kind other */
+--type-marketing-h2-size:clamp(28px,4vw,48px); /* @kind font */
+--type-marketing-h2-weight:300; /* @kind other */
+--type-marketing-h2-lh:1.1; /* @kind other */
+--type-marketing-h2-ls:-0.025em; /* @kind other */
+--type-marketing-h3-size:20px; /* @kind font */
+--type-marketing-h3-weight:500; /* @kind other */
+--type-marketing-h3-lh:1.3; /* @kind other */
+--type-marketing-h3-ls:-0.02em; /* @kind other */
+--type-product-h1-size:24px; /* @kind font */
+--type-product-h1-weight:600; /* @kind other */
+--type-product-h1-lh:1.3; /* @kind other */
+--type-product-h1-ls:-0.015em; /* @kind other */
+--type-product-h2-size:20px; /* @kind font */
+--type-product-h2-weight:600; /* @kind other */
+--type-product-h2-lh:1.3; /* @kind other */
+--type-product-h2-ls:-0.01em; /* @kind other */
+--type-product-h3-size:16px; /* @kind font */
+--type-product-h3-weight:600; /* @kind other */
+--type-product-h3-lh:1.4; /* @kind other */
+--type-product-h3-ls:0; /* @kind other */
+/* Tracking roles for uppercase labels. Reset to 0 under :lang(zh) in base.css — CJK is never letter-spaced. */
+--ls-track-xl:0.3em; /* @kind other */
+--ls-track-lg:0.2em; /* @kind other */
+--ls-track-md:0.15em; /* @kind other */
+--ls-track-sm:0.12em; /* @kind other */
 }

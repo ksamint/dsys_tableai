@@ -16,7 +16,7 @@ export function NavBar({ logoSrc, brand = "TABLE AI", items = [], activeHref, on
       borderBottom: `1px solid ${glass ? "var(--border-line)" : "transparent"}`, transition: "all var(--dur-slow) var(--ease-standard)", ...style }}>
       <div style={{ maxWidth, margin: "0 auto", padding: "0 16px", height, display: "flex", alignItems: "center", justifyContent: "space-between" }}>
         <a href="/" onClick={e => go(e, "/")} style={{ display: "flex", alignItems: "center", gap: 12, textDecoration: "none", color: "inherit" }}>
-          {logoSrc ? <img src={logoSrc} alt={brand} style={{ width: 32, height: 32, objectFit: "contain" }} /> : null}
+          {logoSrc ? <img src={logoSrc} alt={brand} style={{ height: 22, width: "auto" }} /> : null}
           <span style={{ fontSize: 14, fontWeight: 500, letterSpacing: "0.1em" }}>{brand}</span>
         </a>
         <nav style={{ display: "flex", alignItems: "center", gap: 4 }} className="ta-nav-links">
@@ -36,7 +36,7 @@ export function NavBar({ logoSrc, brand = "TABLE AI", items = [], activeHref, on
           {right}
           {onToggleLang ? (
             <button type="button" onClick={onToggleLang} onMouseEnter={() => setLangHover(true)} onMouseLeave={() => setLangHover(false)} aria-label="Toggle language"
-              style={{ padding: "6px 12px", fontFamily: "inherit", fontSize: 11, letterSpacing: "0.15em", textTransform: "uppercase", background: "transparent", cursor: "pointer", color: langHover ? "var(--text)" : "var(--text-muted)",
+              style={{ padding: "6px 12px", fontFamily: "inherit", fontSize: 11, letterSpacing: "var(--ls-track-md)", textTransform: "uppercase", background: "transparent", cursor: "pointer", color: langHover ? "var(--text)" : "var(--text-muted)",
                 border: `1px solid ${langHover ? "rgba(10,22,38,0.3)" : "rgba(197,198,205,0.6)"}`, borderRadius: "var(--radius-control)", transition: "all var(--dur-fast) var(--ease-standard)", transform: langHover ? "scale(1.05)" : "none" }}>
               {lang === "zh" ? "EN" : "中"}
             </button>

@@ -10,7 +10,8 @@ export function Textarea({ label, hint, error, required, rows = 3, autoGrow = fa
     ref.current.style.height = "auto";
     ref.current.style.height = Math.min(ref.current.scrollHeight, maxHeight) + "px";
   }, [value, autoGrow, maxHeight]);
-  const areaId = id || (label ? "ta-" + label.replace(/\W+/g, "-").toLowerCase() : undefined);
+  const autoId = React.useId();
+  const areaId = id || "ta-" + autoId;
   return (
     <FieldLabel label={label} hint={hint} error={error} required={required} htmlFor={areaId} containerStyle={containerStyle}>
       <span style={{ ...fieldFrame({ focus, error, disabled }), padding: "10px 12px", ...style }}>

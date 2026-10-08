@@ -1,7 +1,6 @@
 /**
  * One turn in an agent / human thread. agent = left surface bubble with sparkles avatar; human = right deep-blue bubble;
  * system = centered hairline note.
- * @startingPoint section="A2A" subtitle="Agent / human / system chat turns" viewport="700x320"
  */
 export interface ChatMessageProps {
   role?: "agent" | "human" | "system";

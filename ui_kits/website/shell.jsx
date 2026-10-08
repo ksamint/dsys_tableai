@@ -1,4 +1,4 @@
-const DS = window.TABLEAIDesignSystem_6a9d5e;
+const DS = window.TableAIDesignSystem_f48f27;
 const { Eyebrow, Button, Icon, Divider } = DS;
 
 /* ── Language context: t(B) picks {zh,en} by current lang (falls back like LanguageContext.tsx) ── */
@@ -132,7 +132,7 @@ function Footer() {
         <div className="footer-grid">
           <Reveal className="footer-brand">
             <div style={{ display: "flex", alignItems: "center", gap: 12, marginBottom: 16 }}>
-              <img src="../../assets/logo/tableai-a2a-logo-transparent.png" alt="TABLE AI" style={{ width: 32, height: 32, objectFit: "contain" }} />
+              <img src="../../assets/logo/tableai-a2a-mark.svg" alt="TABLE AI" style={{ height: 22, width: "auto" }} />
               <span style={{ fontSize: 14, fontWeight: 500, letterSpacing: ".1em" }}>TABLE AI</span>
             </div>
             <p style={{ margin: 0, fontSize: 14, lineHeight: 1.6, color: "var(--text-muted)", maxWidth: 384 }}>{t(F.tagline)}</p>
@@ -140,7 +140,7 @@ function Footer() {
           </Reveal>
           {F.columns.map((col, ci) => (
             <Reveal key={ci} delay={(ci + 1) * .1} className="footer-col">
-              <p style={{ margin: "0 0 20px", fontSize: 12, letterSpacing: ".2em", textTransform: "uppercase", color: "var(--text-muted)" }}>{t(col.title)}</p>
+              <p style={{ margin: "0 0 20px", fontSize: 12, letterSpacing: "var(--ls-track-lg)", textTransform: "uppercase", color: "var(--text-muted)" }}>{t(col.title)}</p>
               <ul style={{ listStyle: "none", margin: 0, padding: 0, display: "flex", flexDirection: "column", gap: 12 }}>
                 {col.links.map((l, li) => <li key={li}><A href={l.href} className="footer-link">{t(l.label)}</A></li>)}
               </ul>

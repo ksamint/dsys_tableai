@@ -1,7 +1,6 @@
 /**
  * Square, hairline-bordered card. "tile" variant lives inside TileGrid (1px gaps painted by the border colour) — the
  * website's signature layout for thresholds, pillars, hubs and partners.
- * @startingPoint section="Content" subtitle="Hairline card / tile grid with number, eyebrow, title" viewport="700x320"
  */
 export interface CardProps {
   variant?: "outline" | "tile" | "dark" | "dashed" | "surface";

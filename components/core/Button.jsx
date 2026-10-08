@@ -11,7 +11,7 @@ function variantStyle(variant, { hover, active, disabled }) {
   const base = { border: "1px solid transparent", background: "transparent", color: "var(--text)" };
   switch (variant) {
     case "cta": // Sundial Dark Gold — reserved for the single key conversion action on a view
-      return { ...base, background: hover ? "#9A7E48" : "var(--accent)", color: "var(--text)", borderColor: "transparent",
+      return { ...base, background: hover ? "var(--accent-hover)" : "var(--accent)", color: "var(--text)", borderColor: "transparent",
         boxShadow: active ? "inset 0 0 0 1px var(--color-gold-deep)" : "none" };
     case "outline":
       return { ...base, borderColor: active ? "var(--accent)" : "var(--border-strong)", color: "var(--text)",
@@ -47,13 +47,13 @@ export function Button({ variant = "primary", size = "md", icon, iconRight, load
     opacity: isDisabled ? 0.45 : 1, whiteSpace: "nowrap", userSelect: "none", textDecoration: "none", boxSizing: "border-box",
     transform: active && !isDisabled && variant !== "link" ? "scale(0.98)" : "none",
     transition: "background var(--dur-fast) var(--ease-standard), color var(--dur-fast) var(--ease-standard), border-color var(--dur-fast) var(--ease-standard), box-shadow var(--dur-fast) var(--ease-standard), transform var(--dur-fast) var(--ease-standard)",
-    outline: focus ? "1px solid var(--focus-ring)" : "none", outlineOffset: 2, ...vs, ...style,
+    outline: focus ? "var(--focus-ring-width) solid var(--focus-ring)" : "none", outlineOffset: 2, ...vs, ...style,
   };
   return (
     <Comp type={Comp === "button" ? type : undefined} href={href} disabled={Comp === "button" ? isDisabled : undefined} aria-disabled={isDisabled || undefined}
       style={styles} onClick={isDisabled ? undefined : onClick}
       onMouseEnter={() => setHover(true)} onMouseLeave={() => { setHover(false); setActive(false); }}
-      onMouseDown={() => setActive(true)} onMouseUp={() => setActive(false)} onFocus={() => setFocus(true)} onBlur={() => setFocus(false)} {...rest}>
+      onMouseDown={() => setActive(true)} onMouseUp={() => setActive(false)} onFocus={e => setFocus(e.currentTarget.matches(":focus-visible"))} onBlur={() => setFocus(false)} {...rest}>
       {loading ? <Icon name="loader-circle" size={s.icon} style={{ animation: "ta-spin 1s linear infinite" }} /> : icon ? <Icon name={icon} size={s.icon} /> : null}
       {children}
       {iconRight && !loading ? <Icon name={iconRight} size={s.icon} /> : null}

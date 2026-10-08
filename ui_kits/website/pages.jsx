@@ -1,4 +1,4 @@
-const { Eyebrow, Button, Card, TileGrid, Stat, Divider, Icon, Badge } = window.TABLEAIDesignSystem_6a9d5e;
+const { Eyebrow, Button, Card, TileGrid, Stat, Divider, Icon, Badge } = window.TableAIDesignSystem_f48f27;
 
 function ProtocolPage() {
   const { t } = useLang();
@@ -153,10 +153,10 @@ function AboutPage() {
         </div>
       </Section>
       <Section>
-        <SectionHead eyebrow={t(Ab.networkEyebrow)} title={t(Ab.networkTitle)} right={<span style={{ fontSize: 12, letterSpacing: ".15em", textTransform: "uppercase", color: "var(--text-muted)" }}>{Ab.locations.length}{lang === "zh" ? " " : ""}{t(Ab.nodes)}</span>} />
+        <SectionHead eyebrow={t(Ab.networkEyebrow)} title={t(Ab.networkTitle)} right={<span style={{ fontSize: 12, letterSpacing: "var(--ls-track-md)", textTransform: "uppercase", color: "var(--text-muted)" }}>{Ab.locations.length}{lang === "zh" ? " " : ""}{t(Ab.nodes)}</span>} />
         <Reveal delay={.2}>
           <div className="map-slot">
-            <div className="map-note">{lang === "zh" ? "世界地图（WorldMap.tsx）— 在此处放置地图；节点见下方" : "World map (WorldMap.tsx) — place the map here; nodes listed below"}</div>
+            <div className="map-note">{lang === "zh" ? "世界地圖（WorldMap.tsx）— 在此處放置地圖；節點見下方" : "World map (WorldMap.tsx) — place the map here; nodes listed below"}</div>
             {Ab.locations.map((l, i) => <span key={i} className="map-dot" style={{ left: `${((l.lng + 180) / 360) * 100}%`, top: `${((90 - l.lat) / 180) * 100}%` }} title={t(l.city)} />)}
           </div>
         </Reveal>

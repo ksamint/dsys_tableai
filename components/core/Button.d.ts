@@ -1,6 +1,5 @@
 /**
  * TABLE AI button. Deep-blue structure by default; "cta" is the single Sundial Gold conversion action allowed per view.
- * @startingPoint section="Actions" subtitle="Primary, gold CTA, outline, ghost, link" viewport="700x260"
  */
 export interface ButtonProps {
   /** primary = deep blue fill · cta = Sundial Gold fill (one per view) · outline = deep-blue hairline · ghost · link · danger */

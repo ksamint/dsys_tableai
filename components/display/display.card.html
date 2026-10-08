@@ -7,13 +7,13 @@
 <style>body{margin:0;padding:20px;background:var(--bg)}.row{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-bottom:16px}</style></head>
 <body><div id="root"></div>
 <script type="text/babel">
-const { Card, TileGrid, Badge, Tag, Eyebrow, Stat, Divider, Skeleton } = window.TABLEAIDesignSystem_6a9d5e;
+const { Card, TileGrid, Badge, Tag, Eyebrow, Stat, Divider, Skeleton } = window.TableAIDesignSystem_f48f27;
 function Demo(){
   const [sel,setSel]=React.useState("Greater China");
   return <div>
     <div className="row" style={{justifyContent:"space-between"}}>
       <Eyebrow line>Business Deployment Matrix</Eyebrow>
-      <div className="row" style={{marginBottom:0}}><Badge>Draft</Badge><Badge variant="gold" dot>Live</Badge><Badge variant="inverse">Admin</Badge><Badge variant="strong">Node</Badge><Badge variant="error">Failed</Badge></div>
+      <div className="row" style={{marginBottom:0}}><Badge>Draft</Badge><Badge variant="gold" dot>Live</Badge><Badge variant="inverse">Admin</Badge><Badge variant="strong">Node</Badge><Badge variant="error">Failed</Badge><Badge variant="success" dot>Published</Badge><Badge variant="warning">Pending</Badge></div>
     </div>
     <TileGrid columns={3} style={{marginBottom:16}}>
       <Card variant="tile" padding={20} number="01" eyebrow="Trust Threshold" title="Zero-Trust Settlement" description="Data usable but invisible; instant multi-party clearing." footer="Learn more →" arrow href="#" />
